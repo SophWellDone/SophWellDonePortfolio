@@ -1863,6 +1863,33 @@ input, select, textarea {
 			.icon.style2:active {
 				background-color: rgba(242, 132, 158, 0.1);
 			}
+			
+		.icon.tool {
+			-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+			-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+			-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+			transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+			background: rgba(0, 0, 0, 10);
+			background: linear-gradient(0deg, rgba(0, 0, 0, 0.33) 73%, rgba(255, 255, 255, 0.33) 100%);
+			border: solid 2px #222222;
+			border-radius: 4px;
+			width: 4.65em;
+			height: 4.65em;
+			display: inline-block;
+			text-align: center;
+			line-height: 4.65em;
+			color: inherit;
+		}
+
+			.icon.style3:before {
+				font-size: 1.1em;
+			}
+
+
+			.icon.style3:active {
+				background-color: rgba(242, 132, 158, 0.1);
+			}
+
 
 /* List */
 
@@ -2436,6 +2463,18 @@ input, select, textarea {
 			table.alt tfoot {
 				border-top: 0;
 			}
+			
+/* Tool Icons */
+
+	.tool_row {
+	  display: flex;
+	}
+
+	.tool_column {
+	  flex: 33.33%;
+	  padding: 5px;
+	}
+		
 
 /* Button */
 
