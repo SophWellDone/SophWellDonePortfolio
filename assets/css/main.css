@@ -1864,22 +1864,6 @@ input, select, textarea {
 				background-color: rgba(242, 132, 158, 0.1);
 			}
 			
-		.icon.tool {
-			-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-			-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-			-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-			transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-			background: rgba(0, 0, 0, 10);
-			background: linear-gradient(0deg, rgba(0, 0, 0, 0.33) 73%, rgba(255, 255, 255, 0.33) 100%);
-			border: solid 2px #222222;
-			border-radius: 4px;
-			width: 4.65em;
-			height: 4.65em;
-			display: inline-block;
-			text-align: center;
-			line-height: 4.65em;
-			color: inherit;
-		}
 
 			.icon.style3:before {
 				font-size: 1.1em;
@@ -1889,6 +1873,30 @@ input, select, textarea {
 			.icon.style3:active {
 				background-color: rgba(242, 132, 158, 0.1);
 			}
+
+
+/* Tool Row */
+
+	.tool_row{
+		position:absolute;
+		bottom:0;
+		right:0;
+	}
+
+	.tool_icon {
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		background: rgba(0, 0, 0, 10);
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.33) 73%, rgba(255, 255, 255, 0.33) 100%);
+		width: 4.65em;
+		height: 4.65em;
+		display: inline-block;
+		text-align: center;
+		line-height: 4.65em;
+		color: inherit;
+		margin-right:.75em
+	}
 
 
 /* List */
@@ -2723,6 +2731,7 @@ input, select, textarea {
 				.tiles article > a:hover {
 					color: #ffffff !important;
 				}
+				
 
 				.tiles article > a h2 {
 					margin: 0;
@@ -2743,6 +2752,7 @@ input, select, textarea {
 					.tiles article > a .content > :last-child {
 						margin-bottom: 0;
 					}
+
 
 			.tiles article.style1 > .image:before {
 				background-color: #f2849e;
