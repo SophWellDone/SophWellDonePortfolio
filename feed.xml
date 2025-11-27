@@ -3,10 +3,99 @@
     <title>Sophie Wheldon Portfolio</title>
     <link href="https://skullbuns.com/feed.xml" rel="self" />
     <link href="https://skullbuns.com" />
-    <updated>1970-01-01T01:00:00+01:00</updated>
+    <updated>2025-11-27T04:44:40+00:00</updated>
     <author>
         <name>Sophie Wheldon</name>
     </author>
     <id>https://skullbuns.com</id>
 
+    <entry>
+        <title>Ravine Level Design</title>
+        <author>
+            <name>Sophie Wheldon</name>
+        </author>
+        <link href="https://skullbuns.com/project-template-3.html"/>
+        <id>https://skullbuns.com/project-template-3.html</id>
+            <category term="Unreal Engine"/>
+
+        <updated>2025-11-27T03:20:09+00:00</updated>
+            <summary>
+                <![CDATA[
+                    My goal was to create a level iteratively for a third person shooter. I planned my level in Adobe Illustrator&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p></p>
+<h2></h2>
+<h2>Overview/Goal</h2>
+<p>My goal was to create a level iteratively for a third person shooter. I planned my level in Adobe Illustrator starting with a node based diagram, then using a Melan diagram to ensure players decisions got them to different places in the map. I then used this to whitebox the level in Unreal, also utilising feedback from group playtests to improve on previous designs.</p>
+<h2>Media/Gallery</h2>
+<h3>Final Screenshots</h3>
+<div class="gallery-wrapper gallery-wrapper--wide"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="2">
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/5/gallery/A.png" data-size="1526x827"><img loading="lazy" src="https://skullbuns.com/media/posts/5/gallery/A-thumbnail.png" alt="" width="768" height="416"></a>
+<figcaption>A Site</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/5/gallery/BlueLaunchpads.png" data-size="1526x827"><img loading="lazy" src="https://skullbuns.com/media/posts/5/gallery/BlueLaunchpads-thumbnail.png" alt="" width="768" height="416"></a>
+<figcaption>Blue Launchpads</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/5/gallery/C.png" data-size="1526x827"><img loading="lazy" src="https://skullbuns.com/media/posts/5/gallery/C-thumbnail.png" alt="" width="768" height="416"></a>
+<figcaption>C Site</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/5/gallery/RedLaunchpads.png" data-size="1526x827"><img loading="lazy" src="https://skullbuns.com/media/posts/5/gallery/RedLaunchpads-thumbnail.png" alt="" width="768" height="416"></a>
+<figcaption>Red Launchpads</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/5/gallery/RedSniperTower.png" data-size="1526x827"><img loading="lazy" src="https://skullbuns.com/media/posts/5/gallery/RedSniperTower-thumbnail.png" alt="" width="768" height="416"></a>
+<figcaption>Red Sniper Tower</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/5/gallery/RefinerCombatArena.png" data-size="1526x827"><img loading="lazy" src="https://skullbuns.com/media/posts/5/gallery/RefinerCombatArena-thumbnail.png" alt="" width="768" height="416"></a>
+<figcaption>Combat Arena between B &amp; C</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/5/gallery/ScreenShot00025.png" data-size="1526x827"><img loading="lazy" src="https://skullbuns.com/media/posts/5/gallery/ScreenShot00025-thumbnail.png" alt="" width="768" height="416"></a>
+<figcaption>B</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/5/gallery/TwinRockCombatArena.png" data-size="1526x827"><img loading="lazy" src="https://skullbuns.com/media/posts/5/gallery/TwinRockCombatArena-thumbnail.png" alt="" width="768" height="416"></a>
+<figcaption>Combat Arena between A &amp; B</figcaption>
+</figure>
+</div></div>
+<h3>Diagrams</h3>
+<div class="gallery-wrapper gallery-wrapper--wide"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="2">
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/5/gallery/MelanDiagram-2.png" data-size="1378x811"><img loading="lazy" src="https://skullbuns.com/media/posts/5/gallery/MelanDiagram-2-thumbnail.png" alt="" width="768" height="452"></a>
+<figcaption>Melan diagram</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/5/gallery/NodeBasedLayout-2.png" data-size="1920x1080"><img loading="lazy" src="https://skullbuns.com/media/posts/5/gallery/NodeBasedLayout-2-thumbnail.png" alt="" width="768" height="432"></a>
+<figcaption>Node based layout</figcaption>
+</figure>
+</div></div>
+<p> </p>
+<h3>Work In Progress</h3>
+<div class="gallery-wrapper gallery-wrapper--wide"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="2">
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/5/gallery/river_crystals_final.png" data-size="872x615"><img loading="lazy" src="https://skullbuns.com/media/posts/5/gallery/river_crystals_final-thumbnail.png" alt="" width="768" height="542"></a>
+<figcaption>Making rapid prototype 3D models in 3ds Max</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/5/gallery/river_sightlines_crystal.png" data-size="1404x842"><img loading="lazy" src="https://skullbuns.com/media/posts/5/gallery/river_sightlines_crystal-thumbnail.png" alt="" width="768" height="461"></a>
+<figcaption>A top-down view with sightlines drawn on to show players can't see the central point from launchpad landings.</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/5/gallery/ScreenShot00002.png" data-size="1404x862"><img loading="lazy" src="https://skullbuns.com/media/posts/5/gallery/ScreenShot00002-thumbnail.png" alt="" width="768" height="472"></a>
+<figcaption>A screencap with sketches showing my goal for the launchpads.</figcaption>
+</figure>
+</div></div>
+<h2>Contribution</h2>
+<h3>Tools used</h3>
+<ul>
+<li>Unreal Engine (Whiteboxing, Blueprints)</li>
+<li>Adobe Illustrator (Diagrams)</li>
+<li>3DS Max (Modelling crystals and other decor)</li>
+</ul>
+<h3>My Role</h3>
+<p>I was tasked to create a level iteratively for a third person shooter. I planned my level in Adobe Illustrator: Starting with a node based diagram, then using a Melan diagram to ensure players decisions got them to different places in the map, and finally whiteboxing the level in Unreal using playtest feedback to imrpove on previous designs.</p>
+<h2>Reflection</h2>
+<p>I am pleased with how the level turned out both aethstetically and in layout. I talk about my thought process, feedback and changes on the<a href="https://github.com/uniglos/ct5016-assignment-1-ue5-6-lyra-level-design-SophWellDone/wiki" target="_blank" rel="noopener noreferrer"> Github Wiki</a> along with the source files.</p>
+<p>Aside from the layout, I modified the games jump pads into a long-range yet robust 'launchers' for both teams which was recieved very positvely. I also gained some experience with Unreal's blueprint system modifying this and other game mechanics like killzones and weapon spread.</p>
+<figure class="post__image"><img loading="lazy"  style="outline: 3px solid rgba(var(--color-primary-rgb), 0.55) !important;" src="https://skullbuns.com/media/posts/5/playtest2_results.png" alt="" width="1273" height="523" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://skullbuns.com/media/posts/5/responsive/playtest2_results-xs.png 384w ,https://skullbuns.com/media/posts/5/responsive/playtest2_results-sm.png 600w ,https://skullbuns.com/media/posts/5/responsive/playtest2_results-md.png 768w ,https://skullbuns.com/media/posts/5/responsive/playtest2_results-lg.png 1200w ,https://skullbuns.com/media/posts/5/responsive/playtest2_results-xl.png 1600w"></figure>
+<p> </p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
 </feed>
