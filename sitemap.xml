@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://SophWellDone.github.io/SophWellDonePortfolio/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+<loc>https://SophWellDone.github.io/SophWellDonePortfolio/</loc>
+</url>
+<url>
+<loc>https://SophWellDone.github.io/SophWellDonePortfolio/3d-animations-level-5-degree.html</loc>
+<lastmod>2025-11-17T23:12:27+00:00</lastmod>
+<image:image>
+<image:loc>https://SophWellDone.github.io/SophWellDonePortfolio/media/posts/2/river_crystals_final-2.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://SophWellDone.github.io/SophWellDonePortfolio/media/posts/2/Tito_Portfolio_Frames_0_To_115.mp4</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://SophWellDone.github.io/SophWellDonePortfolio/media/posts/2/preview0007.jpg</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://SophWellDone.github.io/SophWellDonePortfolio/project-template.html</loc>
+<lastmod>2025-11-27T03:19:41+00:00</lastmod>
+<image:image>
+<image:loc>https://SophWellDone.github.io/SophWellDonePortfolio/media/posts/1/river_crystals_final-2.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+</urlset>
