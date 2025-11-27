@@ -1,3 +1,2 @@
 User-agent: *
 Disallow:
-Sitemap: https://SophWellDone.github.io/SophWellDonePortfolio/sitemap.xml
