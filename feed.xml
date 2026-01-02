@@ -3,7 +3,7 @@
     <title>Sophie Wheldon Portfolio</title>
     <link href="https://skullbuns.com/feed.xml" rel="self" />
     <link href="https://skullbuns.com" />
-    <updated>2026-01-02T15:05:31+00:00</updated>
+    <updated>2026-01-02T15:31:43+00:00</updated>
     <author>
         <name>Sophie Wheldon</name>
     </author>
@@ -101,6 +101,8 @@
 <h2>Overview/Goal</h2>
 <p>My goal was to create a level iteratively for a third person shooter. I planned my level in Adobe Illustrator starting with a node based diagram, then using a Melan diagram to ensure players decisions got them to different places in the map. I then used this to whitebox the level in Unreal, also utilising feedback from group playtests to improve on previous designs.</p>
 <h2>Media/Gallery</h2>
+<figure class="post__video"><iframe loading="lazy" width="560" height="314" src="https://www.youtube.com/embed/kv0KjwoVu_U" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
+<p><a href="https://youtu.be/kv0KjwoVu_U">Ravine Level Walkthrough Video</a></p>
 <h3>Final Screenshots</h3>
 <div class="gallery-wrapper gallery-wrapper--wide"><div class="gallery" data-is-empty="false" data-translation="Add images" data-columns="2">
 <figure class="gallery__item"><a href="https://skullbuns.com/media/posts/5/gallery/A.png" data-size="1526x827"><img loading="lazy" src="https://skullbuns.com/media/posts/5/gallery/A-thumbnail.png" alt="" width="768" height="416"></a>
