@@ -3,7 +3,7 @@
     <title>Sophie Wheldon Portfolio</title>
     <link href="https://skullbuns.com/feed.xml" rel="self" />
     <link href="https://skullbuns.com" />
-    <updated>2026-01-02T15:31:43+00:00</updated>
+    <updated>2026-01-14T03:23:20+00:00</updated>
     <author>
         <name>Sophie Wheldon</name>
     </author>
@@ -24,7 +24,7 @@
             <summary>
                 <![CDATA[
                         <img src="https://skullbuns.com/media/posts/6/ToZxqI.png" alt="" />
-                    BPM was my first 3D game and an entry to a Vaporwave themed game jam. BAT PARTY MASSACRE is a&hellip;
+                    BPM was my first 3D game and an entry to a Vaporwave themed game jam. It is playable on itch.io&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -33,7 +33,7 @@
                 <p></p>
 <h2></h2>
 <h2>Overview/Goal</h2>
-<p>BPM was my first 3D game and an entry to a Vaporwave themed game jam. </p>
+<p>BPM was my first 3D game and an entry to a Vaporwave themed game jam. It is <a href="https://skullbuns.itch.io/bat-party-massacre">playable on itch.io</a> </p>
 <blockquote>
 <p><strong>BAT PARTY MASSACRE</strong> is a first-person puzzle game where you play as a hyper-intelligent bat. You prey on humans during the night, sucking their blood and turning them into mindless drones. To achieve this, you are tasked with finding a path to a new target each night with clever tactics such as unlocking doors, breaking obstacles and scaring them. - Bat Party Massacre page</p>
 </blockquote>
@@ -85,6 +85,7 @@
         <id>https://skullbuns.com/ravine-level-design-project.html</id>
         <media:content url="https://skullbuns.com/media/posts/5/C.png" medium="image" />
             <category term="Unreal Engine"/>
+            <category term="2025"/>
 
         <updated>2025-11-27T03:20:09+00:00</updated>
             <summary>
@@ -230,18 +231,19 @@
         </author>
         <link href="https://skullbuns.com/3d-animations-level-5-degree.html"/>
         <id>https://skullbuns.com/3d-animations-level-5-degree.html</id>
-        <media:content url="https://skullbuns.com/media/posts/2/river_crystals_final-2.png" medium="image" />
+        <media:content url="https://skullbuns.com/media/posts/2/Picture1.jpg" medium="image" />
+            <category term="2025"/>
 
         <updated>2025-11-17T17:27:30+00:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://skullbuns.com/media/posts/2/river_crystals_final-2.png" alt="" />
+                        <img src="https://skullbuns.com/media/posts/2/Picture1.jpg" alt="" />
                     In this second year module, we were tasked with creating the following four animations: Final Showreel I really enjoyed working&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://skullbuns.com/media/posts/2/river_crystals_final-2.png" class="type:primaryImage" alt="" /></p>
+                    <p><img src="https://skullbuns.com/media/posts/2/Picture1.jpg" class="type:primaryImage" alt="" /></p>
                 <p id="mcetoc_1ja9d993o56"></p>
 <h2 id="mcetoc_1ja9d993o57"></h2>
 <div class="post__toc">
@@ -274,9 +276,20 @@
 <h2 id="mcetoc_1ja9d993o5a">Contribution</h2>
 <h3 id="mcetoc_1ja9d993o5b">My Role</h3>
 <h3 id="mcetoc_1ja9d993o5c">Tools used</h3>
+<h4>Modelling + Animation</h4>
+<ul>
+<li>3ds Max for Modelling and Animation (Keyframes, Morph targets etc.)</li>
+</ul>
+<h4>Rendering</h4>
+<ul>
+<li>3ds Max Scanline render</li>
+<li>Unreal Engine Cinematic toolset for the 3 other animations</li>
+</ul>
 <p> </p>
 <h2 id="mcetoc_1ja9d993o5d">Reflection</h2>
-<p>I really enjoyed working on this module! My favourite part was the lipsync - using an audio clip I already find funny and adding humourous expressions whilst Tito talks was a really enjoyable way to showcase my knowledge on how to use blendshapes and bones to give life to a 3d character.</p>
+<p>I really enjoyed working on this module! It got me comfortable with a more complex workflow using Unreal for rendering rather than natively rendering in 3ds Max. This did introduce new issues with importing/exporting that took a bit of a toll on the final result, especially with the ball animation missing planned parts due to morph targets not being exported correctly.</p>
+<p>As for specific animations, the fight scene is my favourite by far. I had several ideas for what the fight could be and started animating some, but once I came up with the giant vs rogue idea everything clicked and I really enjoyed playing with the scale and appeal of the characters. The rogues little cocky nod and sassy hip pose alongside the giants threatening stomp is my favourite example of this.</p>
+<p>The lipsync was very fun to work on with the freedom of picking an audio clip and just pure experimentation with expressions, although it was good practice for phonemes!</p>
 <p> </p>
 <p> </p>
 <p> </p>
