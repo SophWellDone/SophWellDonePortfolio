@@ -3,7 +3,7 @@
     <title>Sophie Wheldon Portfolio</title>
     <link href="https://skullbuns.com/feed.xml" rel="self" />
     <link href="https://skullbuns.com" />
-    <updated>2026-01-14T03:23:20+00:00</updated>
+    <updated>2026-01-23T17:38:05+00:00</updated>
     <author>
         <name>Sophie Wheldon</name>
     </author>
@@ -164,6 +164,7 @@
 <p>I was tasked to create a level iteratively for a third person shooter. I planned my level in Adobe Illustrator: Starting with a node based diagram, then using a Melan diagram to ensure players decisions got them to different places in the map, and finally whiteboxing the level in Unreal using playtest feedback to imrpove on previous designs.</p>
 <h2>Reflection</h2>
 <p>I am pleased with how the level turned out both aethstetically and in layout. I talk about my thought process, feedback and changes on the<a href="https://github.com/uniglos/ct5016-assignment-1-ue5-6-lyra-level-design-SophWellDone/wiki" target="_blank" rel="noopener noreferrer"> Github Wiki</a> along with the source files.</p>
+<p>I recieved a 74/100 which got me an A.</p>
 <p>Aside from the layout, I modified the games jump pads into a long-range yet robust 'launchers' for both teams which was recieved very positvely. I also gained some experience with Unreal's blueprint system modifying this and other game mechanics like killzones and weapon spread.</p>
 <figure class="post__image"><img loading="lazy"  style="outline: 3px solid rgba(var(--color-primary-rgb), 0.55) !important;" src="https://skullbuns.com/media/posts/5/playtest2_results.png" alt="" width="1273" height="523" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://skullbuns.com/media/posts/5/responsive/playtest2_results-xs.png 384w ,https://skullbuns.com/media/posts/5/responsive/playtest2_results-sm.png 600w ,https://skullbuns.com/media/posts/5/responsive/playtest2_results-md.png 768w ,https://skullbuns.com/media/posts/5/responsive/playtest2_results-lg.png 1200w ,https://skullbuns.com/media/posts/5/responsive/playtest2_results-xl.png 1600w"></figure>
 <p> </p>
@@ -195,7 +196,7 @@
                 <p></p>
 <h2></h2>
 <h2>Overview/Goal</h2>
-<p>This game was originally made in only 3 days for the <a href="https://itch.io/jam/cozy-fall-jam-2023">Cozy Fall Jam 2023</a> game jam. it is extremely simple in terms of gameplay.</p>
+<p>This game was originally made in only 3 days for the <a href="https://itch.io/jam/cozy-fall-jam-2023">Cozy Fall Jam 2023</a> game jam. it is extremely simple in terms of gameplay, as my 2 focuses for this game jam was to make a game that was easy to pick up and for it to have a polished UI and UX.</p>
 <h2>Media/Gallery</h2>
 <div class="gallery-wrapper"><div class="gallery" data-is-empty="false" data-translation="Add images" data-columns="3">
 <figure class="gallery__item"><a href="https://skullbuns.com/media/posts/3/gallery/Screenshot-2025-12-15-155702.png" data-size="1145x646"><img loading="lazy" src="https://skullbuns.com/media/posts/3/gallery/Screenshot-2025-12-15-155702-thumbnail.png" alt="" width="768" height="433"></a></figure>
@@ -216,8 +217,8 @@
 <h3>My Role</h3>
 <p>I was the main designer and programmer on the game. I worked in a trio on this project, interacting with our musician to make a game with an adapative soundtrack and our playtester to improve iteratively on the games mechanics, UI and aethstetics.</p>
 <h3></h3>
-<p> </p>
 <h2>Reflection</h2>
+<p>ASWTMP, out of all my games, is the one I find myself playing the most. Players don't have to worry about strategy or tactics like other games, but it' still fun to try and get a new high score. Its menues are simple, its vector graphics are clean and unique and I'm proud of the game our team managed to get out.</p>
 <p> </p>
 <p> </p>
 <p> </p>
