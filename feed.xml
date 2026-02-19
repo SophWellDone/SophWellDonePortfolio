@@ -3,12 +3,81 @@
     <title>Sophie Wheldon Portfolio</title>
     <link href="https://skullbuns.com/feed.xml" rel="self" />
     <link href="https://skullbuns.com" />
-    <updated>2026-01-30T08:53:04+00:00</updated>
+    <updated>2026-02-19T01:28:35+00:00</updated>
     <author>
         <name>Sophie Wheldon</name>
     </author>
     <id>https://skullbuns.com</id>
 
+    <entry>
+        <title>Tribe of the Pictomancer</title>
+        <author>
+            <name>Sophie Wheldon</name>
+        </author>
+        <link href="https://skullbuns.com/project-template-3.html"/>
+        <id>https://skullbuns.com/project-template-3.html</id>
+        <media:content url="https://skullbuns.com/media/posts/8/river_crystals_final-2.png" medium="image" />
+            <category term="Game Jam"/>
+            <category term="2026"/>
+
+        <updated>2026-01-30T08:53:37+00:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://skullbuns.com/media/posts/8/river_crystals_final-2.png" alt="" />
+                    You are the revered Pictomancer of your tribe. You make paintings of faraway landscapes so magical their contents can be transformed into tangible resources for your tribe. Tribe of the&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://skullbuns.com/media/posts/8/river_crystals_final-2.png" class="type:primaryImage" alt="" /></p>
+                <p></p>
+<h2></h2>
+<h2>Overview/Goal</h2>
+<blockquote>
+<p><span class="NormalTextRun SCXW177656834 BCX0">You are the </span><span class="NormalTextRun SCXW177656834 BCX0">revered </span><span class="NormalTextRun SCXW177656834 BCX0">Pictomancer of </span><span class="NormalTextRun SCXW177656834 BCX0">your tribe</span><span class="NormalTextRun SCXW177656834 BCX0">. You</span><span class="NormalTextRun SCXW177656834 BCX0"> make</span><span class="NormalTextRun SCXW177656834 BCX0"> paintings of faraway landscapes</span><span class="NormalTextRun SCXW177656834 BCX0"> so magical their contents </span><span class="NormalTextRun SCXW177656834 BCX0">can be </span><span class="NormalTextRun SCXW177656834 BCX0">transformed into tangible resources </span><span class="NormalTextRun SCXW177656834 BCX0">for</span><span class="NormalTextRun SCXW177656834 BCX0"> your tribe. </span></p>
+</blockquote>
+<p>Tribe of the Pictomancer is a simulation game about managing your tribes wellbeing by funding benificial projects. The player gets these resources by choosing what fragments to 'harvest' materials from magical paintings. It was built in 2 days for the Global Game Jam 2026.</p>
+<h2>Media/Gallery</h2>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="3">
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/8/gallery/image2.png" data-size="1690x939"><img loading="lazy" src="https://skullbuns.com/media/posts/8/gallery/image2-thumbnail.png" alt="" width="768" height="427"></a>
+<figcaption>Tthe 'Helping' phase, where the player chooses what to spend their resources on.</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/8/gallery/image.png" data-size="1693x945"><img loading="lazy" src="https://skullbuns.com/media/posts/8/gallery/image-thumbnail.png" alt="" width="768" height="429"></a>
+<figcaption>The 'Harvesting' phase, where the player chooses what parts of the painting to gather from.</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/8/gallery/Main-Town.png" data-size="730x405"><img loading="lazy" src="https://skullbuns.com/media/posts/8/gallery/Main-Town-thumbnail.png" alt="" width="730" height="405"></a>
+<figcaption>This is the tribe without any of the larger, visual upgrades.</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/8/gallery/Final-Town.png" data-size="730x405"><img loading="lazy" src="https://skullbuns.com/media/posts/8/gallery/Final-Town-thumbnail.png" alt="" width="730" height="405"></a>
+<figcaption>The tribe with all the upgrades!</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/8/gallery/Beach_1.png" data-size="720x405"><img loading="lazy" src="https://skullbuns.com/media/posts/8/gallery/Beach_1-thumbnail.png" alt="" width="720" height="405"></a>
+<figcaption>A beach painting. It features grass/trees for fiber, a cliff for the rock and the ocean for water.</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/8/gallery/MushroomForest_1.png" data-size="720x406"><img loading="lazy" src="https://skullbuns.com/media/posts/8/gallery/MushroomForest_1-thumbnail.png" alt="" width="720" height="406"></a>
+<figcaption>A mushroom painting that sadly didnt get implemented in time</figcaption>
+</figure>
+</div></div>
+<h2>Contribution</h2>
+<h3>Tools used</h3>
+<ul>
+<li>Adobe Illustrator (Vector Graphics)</li>
+<li>Microsoft Word (Making the GDD)</li>
+</ul>
+<h3>My Role</h3>
+<p>I did the art and design for the game. This includes designing and creating assets for the gameplay and the UI/UX.</p>
+<p>More specifically, I developed the concept we agreed on to the two-part game loop the game ended up being. I would often check in with the programmer to ensure we both liked the direction the game went in. Then, I would provide clear written guides in the GDD for how the gameplay loop works as well as making tables for the projects in the tribe and what they would cost and reward the player.</p>
+<p>Art-wise, I made the paintings in the game as well as designing UI assets. I decided to use Adobe Illustrator to make clean vector graphics. I liked this approach as i was able to creatie it on mouse and keyboard. It ended up being a fun challenge, using bezier curves to create the outline of usaully rough natural features.</p>
+<h2>Reflection</h2>
+<p>The art side of my contribution helped me practice and enhance my skills with vector graphics. One 'softer' art skill I focused on was composition when making the landscapes, using golden ratio and rule of thirds to make a pleasing curves for the eyes to follow.</p>
+<p>The design side of my contribution helped give the game an identity and clear features for the programmer to implement.</p>
+<p>Overall, it was a different experience to my usual game jam design and programming split that was a lot of fun and felt more focused on a single role. Having another person in charge of programming features helped me create art and design choices that made the game feel more polished than previous games i've made in even longer periods of time!</p>
+<p> </p>
+<p> </p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Cat&#x27;s Culinary Catastrophe (2D Animation)</title>
         <author>
@@ -315,7 +384,7 @@
 <p>I was the main designer and programmer on the game. I worked in a trio on this project, interacting with our musician to make a game with an adapative soundtrack and our playtester to improve iteratively on the games mechanics, UI and aethstetics.</p>
 <h3></h3>
 <h2>Reflection</h2>
-<p>ASWTMP, out of all my games, is the one I find myself playing the most. Players don't have to worry about strategy or tactics like other games, but it' still fun to try and get a new high score. Its menues are simple, its vector graphics are clean and unique and I'm proud of the game our team managed to get out.</p>
+<p>ASWTMP, out of all my games, is the one I find myself playing the most. Players don't have to worry about strategy or tactics like other games, but it is still fun to try and get a new high score. Its menues are simple, it's vector graphics are clean and unique and I'm proud of the game our team managed to get out.</p>
 <p> </p>
 <p> </p>
 <p> </p>
