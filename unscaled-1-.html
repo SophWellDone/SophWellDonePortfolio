@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="en-gb"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>UNSCALED 1 - INTRO - Sophie Wheldon Portfolio</title><meta name="description" content="UNSCALED is a single-player, high-tempo 'movement shooter' roguelike that is designed with accessibility as a core principle.&nbsp; Whilst celebrated as&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="stylesheet" href="https://skullbuns.com/media/plugins/syntaxHighlighter/prism-black.css"><link rel="canonical" href="https://skullbuns.com/unscaled-1-.html"><link rel="alternate" type="application/atom+xml" href="https://skullbuns.com/feed.xml" title="Sophie Wheldon Portfolio - RSS"><link rel="alternate" type="application/json" href="https://skullbuns.com/feed.json" title="Sophie Wheldon Portfolio - JSON"><meta property="og:title" content="UNSCALED 1 - INTRO"><meta property="og:site_name" content="Sophie Wheldon Portfolio"><meta property="og:description" content="UNSCALED is a single-player, high-tempo 'movement shooter' roguelike that is designed with accessibility as a core principle.&nbsp; Whilst celebrated as&hellip;"><meta property="og:url" content="https://skullbuns.com/unscaled-1-.html"><meta property="og:type" content="article"><link rel="stylesheet" href="https://skullbuns.com/assets/css/style.css?v=116950e11092bf3b28017451e3747b99"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://skullbuns.com/unscaled-1-.html"},"headline":"UNSCALED 1 - INTRO","datePublished":"2026-03-24T18:31+00:00","dateModified":"2026-03-24T19:47+00:00","description":"UNSCALED is a single-player, high-tempo 'movement shooter' roguelike that is designed with accessibility as a core principle.&nbsp; Whilst celebrated as&hellip;","author":{"@type":"Person","name":"Sophie Wheldon","url":"https://skullbuns.com/authors/sophie-wheldon/"},"publisher":{"@type":"Organization","name":"Sophie Wheldon"}}</script><noscript><style>img[loading] {
+                        opacity: 1;
+                    }</style></noscript></head><body class="post-template lines"><div class="container lines lines--right"><header class="header"><a href="https://skullbuns.com/" class="logo">Sophie Wheldon Portfolio</a><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Menu">Menu</button><ul class="navbar__menu"><li><a href="www.linkedin.com/in/SophWheldon" target="_blank">LinkedIn</a></li><li><a href="https://skullbuns.itch.io" target="_self">Itch.io</a></li></ul></nav></header><main class="main post"><article class="content"><header class="content__inner content__header"><h1 class="content__title">UNSCALED 1 - INTRO</h1><div class="content__meta"><div class="content__meta__left"><a href="https://skullbuns.com/authors/sophie-wheldon/" class="invert content__author" rel="author" title="Sophie Wheldon">Sophie Wheldon</a></div><div class="content__meta__right"><time datetime="2026-03-24T18:31" class="content__date">March 24, 2026</time><div class="content__updated">Updated on <time datetime="2026-03-24T18:31" class="content__date">March 24, 2026</time></div></div></div></header><div class="content__inner"><div class="content__entry"><p>UNSCALED is a single-player, high-tempo 'movement shooter' roguelike that is designed with accessibility as a core principle.&nbsp;</p><p>Whilst celebrated as the saviours of countless realms and lives, the heroes of the realm spin a fake narrative to hide the fact that they themselves are the monsters they claim to strike down.&nbsp; You play as one of the betrayed, a varied collective of villains and monsters that have been victimised by this adventuring party and are seeking revenge.</p><h2 id="the-reasons-for-making-unscaled">The reasons for making UNSCALED</h2><p>UNSCALED is a game that serves 2 main purposes:</p><ul><li><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: 1em; font-weight: var(--font-weight-normal);">Fill a gap in the market for accessible yet fast-paced shooters through deep customisation of the games difficulty and accessibility options.</span><br></li><li><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: 1em; font-weight: var(--font-weight-normal);">Advance my personal skill as a Technical Artist through shaders, rigging and other technical systems I wish to become more experienced with.<br></span></li></ul><p>Whilst movement shooters are a beloved genre for more competitive and experienced gamers, they require a high mechanical, cognitive and sensory skill that not all who play games have. This gives the genre a high barrier to entry that UNSCALED should bridge.</p><h2 id="gameplay-loop">Gameplay Loop</h2><p>On the first time opening the game, a quick survey will help speed up setting all the options on assistance systems the game has in place. Afterwards, will likely follow</p><h2 id="gameplay-systems">Gameplay Systems</h2><p>I wanted a robust system under-the-hood that made adding new characters, abilities and movement states from walking to flying easy to add.&nbsp;Godot's docs highly recommend using composition over inheritance, where modular child nodes are used for different systems rather than combining it all into one class.</p><figure class="post__image post__image--center"><img loading="lazy" src="https://skullbuns.com/media/posts/9/notes.png" height="338" width="760" alt="" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://skullbuns.com/media/posts/9/responsive/notes-xs.png 384w, https://skullbuns.com/media/posts/9/responsive/notes-sm.png 600w, https://skullbuns.com/media/posts/9/responsive/notes-md.png 768w, https://skullbuns.com/media/posts/9/responsive/notes-lg.png 1200w, https://skullbuns.com/media/posts/9/responsive/notes-xl.png 1600w"></figure><h3 id="movement">Movement</h3><p>Movement uses a single state machine, with the actual physics code separated into different movement state or 'mstate' scripts.</p><pre class="line-numbers language-gdscript"><code># MovementTree.GD
+
+# Handles changing state. Arguments can be used for many purposes, such as
+# storing context for the state switch or saving look directions / velocities.
+# Returns whether state change was successful.
+func change_to_state(new:String, arguments:Dictionary) -&gt; bool:
+	var new_state : MovementState = null
+	for i in _possible_states:
+		if i.name == new:
+			new_state = i
+	
+	if new_state == null:
+		return false
+		push_error("State name %s not found!" % new)
+	
+	var old_state : MovementState = current_state	
+	old_state.on_state_exited(arguments)
+	current_state = new_state
+	new_state.on_state_entered(arguments)
+
+	print("Changed from state %s -&gt; %s" % [old_state.name, new_state.name])
+	if !arguments.is_empty():
+		print(" ^Additional arguments: %s" % arguments)
+	return true
+</code></pre><p>This state machine provides several 'hooks' to run functions at various points during the transition. For example, here is the dash that the first character will have&nbsp;</p><pre class="line-numbers language-gdscript"><code>extends MovementState
+
+#mstate_wingdash.gd
+# Custom Movement state for the dragon's dash. Dash direction is calculated
+# at the start of the dash and applied for a short direction, ignoring gravity.
+
+var current_dash_direction : Vector3
+var current_dash_time : float
+
+var dash_duration : float = 0.15
+var dash_velocity : float = 12.0
+
+
+func _on_state_entered(arguments:Dictionary):
+	var input_dir = input.get_walk_vector(camera)
+	current_dash_direction = camera.global_transform.basis * Vector3(
+		input_dir.x, 0, input_dir.y)
+	current_dash_time = 0.0
+
+# Same as _physics_process but is only run when this state is active.
+func _process_physics(delta:float):
+	body.velocity = current_dash_direction * dash_velocity
+	body.move_and_slide()
+	
+	current_dash_time += delta
+	if current_dash_time &gt; dash_duration:
+		movement_tree.change_to_state("Fall", {"previous" :" dash_ended"})</code></pre><p></p></div><footer class="content__footer"><div class="content__tag-share"><div class="content__share"></div></div></footer></div></article></main><footer class="footer"><div class="footer__left"><div class="footer__copy">Powered by Publii</div></div><button onclick="backToTopFunction()" id="backToTop" class="footer__bttop" aria-label="Back to top" title="Back to top"><svg><use xlink:href="https://skullbuns.com/assets/svg/svg-map.svg#toparrow"/></svg></button></footer></div><script>window.publiiThemeMenuConfig = { mobileMenuMode: 'sidebar', animationSpeed: 300, submenuWidth: 'auto', doubleClickTime: 500, mobileMenuExpandableSubmenus: true, relatedContainerForOverlayMenuSelector: '.navbar', };</script><script defer="defer" src="https://skullbuns.com/assets/js/scripts.min.js?v=59269328060dc70acb340c4b9dccbcde"></script><script>function publiiDetectLoadedImages () {
+         var images = document.querySelectorAll('img[loading]:not(.is-loaded)');
+         for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+               images[i].classList.add('is-loaded');
+               images[i].parentNode.classList.remove('is-img-loading');
+            } else {
+               images[i].addEventListener('load', function () {
+                  this.classList.add('is-loaded');
+                  this.parentNode.classList.remove('is-img-loading');
+               }, false);
+            }
+         }
+      }
+      publiiDetectLoadedImages();</script><script defer="defer" src="https://skullbuns.com/media/plugins/syntaxHighlighter/prism.js"></script><script defer="defer" src="https://skullbuns.com/media/plugins/syntaxHighlighter/prism-line-numbers.min.js"></script></body></html>

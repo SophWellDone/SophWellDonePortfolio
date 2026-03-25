@@ -3,12 +3,190 @@
     <title>Sophie Wheldon Portfolio</title>
     <link href="https://skullbuns.com/feed.xml" rel="self" />
     <link href="https://skullbuns.com" />
-    <updated>2026-02-19T01:28:35+00:00</updated>
+    <updated>2026-03-25T23:39:03+00:00</updated>
     <author>
         <name>Sophie Wheldon</name>
     </author>
     <id>https://skullbuns.com</id>
 
+    <entry>
+        <title>Myri - 3D Character Model and Rig </title>
+        <author>
+            <name>Sophie Wheldon</name>
+        </author>
+        <link href="https://skullbuns.com/project-template-4.html"/>
+        <id>https://skullbuns.com/project-template-4.html</id>
+            <category term="3D Modelling"/>
+            <category term="2026"/>
+
+        <updated>2026-03-25T20:47:41+00:00</updated>
+            <summary>
+                <![CDATA[
+                    Myri was a 3d character I rigged and modelled for a 3D Modelling module. I started off with just the&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p></p>
+<h2></h2>
+<h2>Overview/Goal</h2>
+<p>Myri was a 3d character I rigged and modelled for a 3D Modelling module. </p>
+<h2>Media/Gallery</h2>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="true" data-translation="Add images"> </div></div>
+<h2>Tools used</h2>
+<ul>
+<li><strong>3ds Max</strong> (Modelling, UV Unwrap, Rigging + Animation)</li>
+<li><strong>Substance Painter</strong> (Materials, baking)</li>
+<li><strong>Unity </strong>(Making a animated character)</li>
+</ul>
+<h2>Progress</h2>
+<h3>Concept Stage</h3>
+<p>I started off with just the concept of 'a dragon trapped in a human body'. A colour palette was decided, with colours inspired by their gold-hoarding past and contrasting black/white to show the characters internal struggle. </p>
+<p>I then created a moodboard to help explore themes and character story I wanted them to represent - they are a brass dragon, they wear gold from their old hoard, they have a spellcasting object as they cannot cast magic without it.</p>
+<p>The final step of the concept stage was making some design variations with photobashes and art:</p>
+<ol>
+<li>The first had a more comfortable and practical robes look. She has a magical, starry orb that is slung across her waist in a belt.</li>
+<li>The second design had a  very sleek, angular and fashionable design language with bold metallic trims. </li>
+<li>The third and final design had the goal of striking the balance between the two, being both practical and stylish. She wears a cloak with many draconic elements (face on the hood, scale panel) alongside gold jewlery and sunglasses.</li>
+</ol>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="3">
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/11/gallery/Moodboard.png" data-size="1920x1463"><img loading="lazy" src="https://skullbuns.com/media/posts/11/gallery/Moodboard-thumbnail.png" alt="" width="768" height="585"></a>
+<figcaption>Main Moodboard</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/11/gallery/myri_concept_art.png" data-size="2400x2000"><img loading="lazy" src="https://skullbuns.com/media/posts/11/gallery/myri_concept_art-thumbnail.png" alt="" width="768" height="640"></a>
+<figcaption>Concept art - The bottom right was the final design used!</figcaption>
+</figure>
+</div></div>
+<h3>Modelling Stage</h3>
+<p>The modelling stage was difficult as my first humanoid 3d model. I used progressive saves (save01, save02 etc.) to revert progress if needed.</p>
+<h4>Making the Body- Myri_01-&gt;07</h4>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="3">
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/11/gallery/Picture4.png" data-size="342x395"><img loading="lazy" src="https://skullbuns.com/media/posts/11/gallery/Picture4-thumbnail.png" alt="" width="342" height="395"></a>
+<figcaption>Myri_01.max - Start of the body</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/11/gallery/Picture2.png" data-size="525x396"><img loading="lazy" src="https://skullbuns.com/media/posts/11/gallery/Picture2-thumbnail.png" alt="" width="525" height="396"></a>
+<figcaption>Myri_03.max - Turbosmooth added</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/11/gallery/Picture5.png" data-size="602x550"><img loading="lazy" src="https://skullbuns.com/media/posts/11/gallery/Picture5-thumbnail.png" alt=""></a>
+<figcaption>Myri_05.max - Final stage before face was started.</figcaption>
+</figure>
+</div></div>
+<ul>
+<li>First attempt at the body. This is where I set up my low/high poly modifier stack, using a turbosmooth modifer to create the high poly as I go. I struggled with symmettry fusing polys together at center, as well as the model looking too boxy.</li>
+</ul>
+<h4>Starting the Face &amp; Ears - Myri 08 -&gt; 10</h4>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="3">
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/11/gallery/MyriFaceModelling.png" data-size="602x512"><img loading="lazy" src="https://skullbuns.com/media/posts/11/gallery/MyriFaceModelling-thumbnail.png" alt="" width="602" height="512"></a>
+<figcaption>Myri_06 - Starting face as flat plane</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/11/gallery/Picture7.png" data-size="447x317"><img loading="lazy" src="https://skullbuns.com/media/posts/11/gallery/Picture7-thumbnail.png" alt="" width="447" height="317"></a>
+<figcaption>Myri_07 - This was what the face looked like after just being welded to the head.</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/11/gallery/Picture8.png" data-size="602x438"><img loading="lazy" src="https://skullbuns.com/media/posts/11/gallery/Picture8-thumbnail.png" alt="" width="602" height="438"></a>
+<figcaption>Myri_10 - Face was now looking much more human, ears completely redone</figcaption>
+</figure>
+</div></div>
+<p>I took a flat approach to starting the face, where i would focus on good topology first before attaching it to the head. This made the face look very uncanny and poorly propotioned at first, but with smoothing and readjusting the width of many of the edges it came out a lot smoother and developed a more anime style.</p>
+<p>The turbosmooth also destroyed the original ears, which were redone during this stage.</p>
+<h4>Fixing the body - Myri_15.max</h4>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="3">
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/11/gallery/Screenshot-2026-03-14-205411.png" data-size="369x570"><img loading="lazy" src="https://skullbuns.com/media/posts/11/gallery/Screenshot-2026-03-14-205411-thumbnail.png" alt="Myri_11 - Hand start" width="369" height="570"></a></figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/11/gallery/Screenshot-2026-03-14-212845.png" data-size="592x538"><img loading="lazy" src="https://skullbuns.com/media/posts/11/gallery/Screenshot-2026-03-14-212845-thumbnail.png" alt="Myri_11 - Adding thumb and testing turbosmooth" width="592" height="538"></a></figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/11/gallery/Screenshot-2026-03-14-220257.png" data-size="771x383"><img loading="lazy" src="https://skullbuns.com/media/posts/11/gallery/Screenshot-2026-03-14-220257-thumbnail.png" alt="Myri_11 - Reattaching arm" width="768" height="382"></a></figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/11/gallery/Screenshot-2026-03-15-014603.png" data-size="966x481"><img loading="lazy" src="https://skullbuns.com/media/posts/11/gallery/Screenshot-2026-03-15-014603-thumbnail.png" alt="Myri_11 - Final hand and arm after redo" width="768" height="382"></a></figure>
+</div></div>
+<p>The hands needed redoing, which eventually cascading into redoing the entire arm from scratch. </p>
+<h4>Final Base Mesh - Myri_15.max</h4>
+<div class="gallery-wrapper gallery-wrapper--full"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="2">
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/11/gallery/Screenshot-2026-03-20-153901.png" data-size="581x743"><img loading="lazy" src="https://skullbuns.com/media/posts/11/gallery/Screenshot-2026-03-20-153901-thumbnail.png" alt="" width="581" height="743"></a></figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/11/gallery/Screenshot-2026-03-20-153820.png" data-size="596x679"><img loading="lazy" src="https://skullbuns.com/media/posts/11/gallery/Screenshot-2026-03-20-153820-thumbnail.png" alt="" width="596" height="679"></a></figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/11/gallery/Screenshot-2026-03-20-153726.png" data-size="906x363"><img loading="lazy" src="https://skullbuns.com/media/posts/11/gallery/Screenshot-2026-03-20-153726-thumbnail.png" alt="" width="768" height="308"></a></figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/11/gallery/Screenshot-2026-03-20-153703.png" data-size="578x684"><img loading="lazy" src="https://skullbuns.com/media/posts/11/gallery/Screenshot-2026-03-20-153703-thumbnail.png" alt="" width="578" height="684"></a></figure>
+</div></div>
+<p>This stage was about finishing the base body mesh so I was ready to model clothing on top. It involved a mix of using soft selection to gently scuplt areas into more natural curves and retopologising. Many edge loops were removed which significantly reduced the models poly count. This let me add some back to the body where it was more needed for a even density across the model.</p>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 14.1227%;" width="85">
+<p><strong>Mesh</strong></p>
+</td>
+<td style="width: 36.0913%;" width="217">
+<p><strong>Previous Poly Count (Myri_10)</strong></p>
+</td>
+<td style="width: 30.6705%;" width="184">
+<p><strong>Final Poly Count (Myri_15)</strong></p>
+</td>
+<td style="width: 19.1155%;" width="115">
+<p><strong>% Change</strong></p>
+</td>
+</tr>
+<tr>
+<td style="width: 14.1227%;" width="85">
+<p><strong>Head</strong></p>
+</td>
+<td style="width: 36.0913%;" width="217">
+<p>6052</p>
+</td>
+<td style="width: 30.6705%;" width="184">
+<p>3872</p>
+</td>
+<td style="width: 19.1155%;" width="115">
+<p>-36.02%</p>
+</td>
+</tr>
+<tr>
+<td style="width: 14.1227%;" width="85">
+<p><strong>Body</strong></p>
+</td>
+<td style="width: 36.0913%;" width="217">
+<p>9184</p>
+</td>
+<td style="width: 30.6705%;" width="184">
+<p>10,512</p>
+</td>
+<td style="width: 19.1155%;" width="115">
+<p>+14.45%</p>
+</td>
+</tr>
+<tr>
+<td style="width: 14.1227%;" width="85">
+<p><strong>Ears</strong></p>
+</td>
+<td style="width: 36.0913%;" width="217">
+<p>2925</p>
+</td>
+<td style="width: 30.6705%;" width="184">
+<p>1888</p>
+</td>
+<td style="width: 19.1155%;" width="115">
+<p>-35.45%</p>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 14.1227%;" width="85">
+<p><strong>Total</strong></p>
+</td>
+<td style="width: 36.0913%;" width="217">
+<p>18,161</p>
+</td>
+<td style="width: 30.6705%;" width="184">
+<p>16,272</p>
+</td>
+<td style="width: 19.1155%;" width="115">
+<p>-10.40%</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2>Reflection</h2>
+<p>I think i did a crap job</p>
+<p> </p>
+<p> </p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Tribe of the Pictomancer</title>
         <author>
@@ -79,103 +257,6 @@
         </content>
     </entry>
     <entry>
-        <title>Cat&#x27;s Culinary Catastrophe (2D Animation)</title>
-        <author>
-            <name>Sophie Wheldon</name>
-        </author>
-        <link href="https://skullbuns.com/project-template-2.html"/>
-        <id>https://skullbuns.com/project-template-2.html</id>
-        <media:content url="https://skullbuns.com/media/posts/7/vlcsnap-2025-12-15-15h29m19s661.png" medium="image" />
-            <category term="2024"/>
-
-        <updated>2025-12-15T15:11:02+00:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://skullbuns.com/media/posts/7/vlcsnap-2025-12-15-15h29m19s661.png" alt="" />
-                    Cat's Culinary Catastrophe was made for a University assignment; I was tasked to create a 2D animated story for children.
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://skullbuns.com/media/posts/7/vlcsnap-2025-12-15-15h29m19s661.png" class="type:primaryImage" alt="" /></p>
-                <p></p>
-<h2></h2>
-<h2>Overview</h2>
-<p>Cat's Culinary Catastrophe was made for a University assignment; I was tasked to create a 2D animated story for children. The story I came up with is about a farmer who has different ideas for meals throughout the seasons, but keeps bumping into issues each time as their friends have to help out! </p>
-<h2>Media/Gallery</h2>
-<h3>Final Animation</h3>
-<p><a href="https://youtu.be/uKPDQw12oA8">Click here to watch the animation on YouTube!</a></p>
-<div class="gallery-wrapper gallery-wrapper--wide"><div class="gallery" data-is-empty="false" data-translation="Add images" data-columns="1">
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/vlcsnap-2025-12-15-15h29m19s661.png" data-size="1920x1080"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/vlcsnap-2025-12-15-15h29m19s661-thumbnail.png" alt="" width="768" height="432"></a>
-<figcaption>The cat first waking up from their snooze in their farm's hammock.</figcaption>
-</figure>
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/vlcsnap-2025-12-15-15h27m50s492.png" data-size="1920x1080"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/vlcsnap-2025-12-15-15h27m50s492-thumbnail.png" alt="" width="768" height="432"></a>
-<figcaption>The cat reaching for a egg their sleepy chicken has laid.</figcaption>
-</figure>
-</div></div>
-<h3>Storyboarding</h3>
-<h4>Spring</h4>
-<div class="gallery-wrapper"><div class="gallery" data-is-empty="false" data-translation="Add images" data-columns="3">
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/Spring_1.png" data-size="1280x720"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/Spring_1-thumbnail.png" alt="" width="768" height="432"></a></figure>
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/Spring_2.png" data-size="1280x720"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/Spring_2-thumbnail.png" alt="" width="768" height="432"></a></figure>
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/Spring_3.png" data-size="1280x720"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/Spring_3-thumbnail.png" alt="" width="768" height="432"></a></figure>
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/Spring_4.png" data-size="1280x720"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/Spring_4-thumbnail.png" alt="" width="768" height="432"></a></figure>
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/Spring_5.png" data-size="1280x720"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/Spring_5-thumbnail.png" alt="" width="768" height="432"></a></figure>
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/Spring_6.png" data-size="1280x720"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/Spring_6-thumbnail.png" alt="" width="768" height="432"></a></figure>
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/Spring_7.png" data-size="1280x720"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/Spring_7-thumbnail.png" alt="" width="768" height="432"></a></figure>
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/Spring_8.png" data-size="1280x720"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/Spring_8-thumbnail.png" alt="" width="768" height="432"></a></figure>
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/Spring_9.png" data-size="1280x720"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/Spring_9-thumbnail.png" alt="" width="768" height="432"></a></figure>
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/Spring_10.png" data-size="1280x720"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/Spring_10-thumbnail.png" alt="" width="768" height="432"></a></figure>
-</div></div>
-<h4>Summer</h4>
-<div class="gallery-wrapper"><div class="gallery" data-is-empty="false" data-translation="Add images" data-columns="3">
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_1.png" data-size="1280x720"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_1-thumbnail.png" alt="" width="768" height="432"></a></figure>
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_2.png" data-size="1280x720"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_2-thumbnail.png" alt="" width="768" height="432"></a></figure>
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_3.png" data-size="1280x720"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_3-thumbnail.png" alt="" width="768" height="432"></a></figure>
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_4.png" data-size="1280x720"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_4-thumbnail.png" alt="" width="768" height="432"></a></figure>
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_5.png" data-size="1280x720"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_5-thumbnail.png" alt="" width="768" height="432"></a></figure>
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_6.png" data-size="1280x720"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_6-thumbnail.png" alt="" width="768" height="432"></a></figure>
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_7.png" data-size="1280x720"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_7-thumbnail.png" alt="" width="768" height="432"></a></figure>
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_8.png" data-size="1280x720"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_8-thumbnail.png" alt="" width="768" height="432"></a></figure>
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_9.png" data-size="1280x720"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_9-thumbnail.png" alt="" width="768" height="432"></a></figure>
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_10.png" data-size="1280x720"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_10-thumbnail.png" alt="" width="768" height="432"></a></figure>
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_11.png" data-size="1280x720"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_11-thumbnail.png" alt="" width="768" height="432"></a></figure>
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_12.png" data-size="1280x720"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_12-thumbnail.png" alt="" width="768" height="432"></a></figure>
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_13.png" data-size="1280x720"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_13-thumbnail.png" alt="" width="768" height="432"></a></figure>
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_14.png" data-size="1280x720"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_14-thumbnail.png" alt="" width="768" height="432"></a></figure>
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_15.png" data-size="1280x720"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/SummerStoryboard_15-thumbnail.png" alt="" width="768" height="432"></a></figure>
-</div></div>
-<h3>Concept Art</h3>
-<div class="gallery-wrapper"><div class="gallery" data-is-empty="false" data-translation="Add images" data-columns="1">
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/AnthroFarmerFinalConcept.png" data-size="3508x2480"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/AnthroFarmerFinalConcept-thumbnail.png" alt="" width="768" height="543"></a>
-<figcaption>My second main character concept featured a clumbsy cat protaganist in a vibrant pastel-brushed world. I enjoyed this idea and stuck with it!</figcaption>
-</figure>
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/7/gallery/PixelArtCharacterSketch.png" data-size="320x640"><img loading="lazy" src="https://skullbuns.com/media/posts/7/gallery/PixelArtCharacterSketch-thumbnail.png" alt="" width="320" height="640"></a>
-<figcaption>My first main character concept was a more generic farmer character in a pixel art style.</figcaption>
-</figure>
-</div></div>
-<h2>Contribution</h2>
-<h3>Tools used</h3>
-<ul>
-<li>Davinci Resolve (Video Editing, Animating camera + character limbs)</li>
-<li>Photoshop (Storyboarding, character sprites + backgrounds)</li>
-</ul>
-<h3>My Role</h3>
-<p>As this was a solo assigment, I was responsible for creating:</p>
-<ul>
-<li>A storyboard and the final animation.</li>
-<li>Animating the characters, which was done by creating a 'spritesheet' of each body part and combining them in Resolve.</li>
-</ul>
-<h2>Reflection</h2>
-<p>I was really happy with the animation both as a personal project and academically. It got an A or 70/100 grade and was also something I hadn't done before - 2D animation - which boosted my confidence in trying new projects I hadn't done before.</p>
-<p>I didn't get the full story I storyboarded done. This was somewhat disheartening but it reminded me that my time management skills needed work as I had spent a large portion of my limited time working on only the first season/quarter of the story.</p>
-<p> </p>
-<p> </p>
-<p> </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
         <title>Bat Party Massacre</title>
         <author>
             <name>Sophie Wheldon</name>
@@ -212,7 +293,6 @@
 <figure class="gallery__item"><a href="https://skullbuns.com/media/posts/6/gallery/oT1n86.png" data-size="957x539"><img loading="lazy" src="https://skullbuns.com/media/posts/6/gallery/oT1n86-thumbnail.png" alt="" width="768" height="433"></a></figure>
 </div></div>
 <h2>Contribution</h2>
-<p> </p>
 <h3>Tools used</h3>
 <ul>
 <li>Godot Engine
@@ -257,7 +337,7 @@
             <summary>
                 <![CDATA[
                         <img src="https://skullbuns.com/media/posts/5/C.png" alt="" />
-                    My goal was to create a level iteratively for a third person shooter. I planned my level in Adobe Illustrator&hellip;
+                    My goal was to create a level iteratively for a third person shooter. A Github wiki recounts the iterative process&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -266,7 +346,7 @@
                 <p></p>
 <h2></h2>
 <h2>Overview/Goal</h2>
-<p>My goal was to create a level iteratively for a third person shooter. I planned my level in Adobe Illustrator starting with a node based diagram, then using a Melan diagram to ensure players decisions got them to different places in the map. I then used this to whitebox the level in Unreal, also utilising feedback from group playtests to improve on previous designs.</p>
+<p>My goal was to create a level iteratively for a third person shooter. <a title="https://github.com/uniglos/ct5016-assignment-1-ue5-6-lyra-level-design-SophWellDone/wiki">A Github wiki recounts the iterative process I worked on the level with</a>; I planned my level in Adobe Illustrator with a node based diagram, then using a Melan diagram to ensure players decisions got them to different places in the map. I finally used these two plans to whitebox the level in Unreal, also utilising feedback from group playtests to improve on previous designs.</p>
 <h2>Media/Gallery</h2>
 <figure class="post__video"><iframe loading="lazy" width="560" height="314" src="https://www.youtube.com/embed/kv0KjwoVu_U" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
 <p><a href="https://youtu.be/kv0KjwoVu_U">Ravine Level Walkthrough Video</a></p>
@@ -309,9 +389,6 @@
 <p> </p>
 <h3>Work In Progress</h3>
 <div class="gallery-wrapper gallery-wrapper--wide"><div class="gallery" data-is-empty="false" data-translation="Add images" data-columns="2">
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/5/gallery/river_crystals_final.png" data-size="872x615"><img loading="lazy" src="https://skullbuns.com/media/posts/5/gallery/river_crystals_final-thumbnail.png" alt="" width="768" height="542"></a>
-<figcaption>Making rapid prototype 3D models in 3ds Max</figcaption>
-</figure>
 <figure class="gallery__item"><a href="https://skullbuns.com/media/posts/5/gallery/river_sightlines_crystal.png" data-size="1404x842"><img loading="lazy" src="https://skullbuns.com/media/posts/5/gallery/river_sightlines_crystal-thumbnail.png" alt="" width="768" height="461"></a>
 <figcaption>A top-down view with sightlines drawn on to show players can't see the central point from launchpad landings.</figcaption>
 </figure>
@@ -348,6 +425,7 @@
         <media:content url="https://skullbuns.com/media/posts/3/fyXV45-2.png" medium="image" />
             <category term="Godot"/>
             <category term="Game Jam"/>
+            <category term="2023"/>
 
         <updated>2025-11-17T21:59:00+00:00</updated>
             <summary>
@@ -399,13 +477,14 @@
         <link href="https://skullbuns.com/3d-animations-level-5-degree.html"/>
         <id>https://skullbuns.com/3d-animations-level-5-degree.html</id>
         <media:content url="https://skullbuns.com/media/posts/2/Picture1.jpg" medium="image" />
+            <category term="3D Modelling"/>
             <category term="2025"/>
 
         <updated>2025-11-17T17:27:30+00:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://skullbuns.com/media/posts/2/Picture1.jpg" alt="" />
-                    In this second year module, we were tasked with creating the following four animations: Final Showreel I really enjoyed working&hellip;
+                    In this second year module, we were tasked with creating the following four animations: I really enjoyed working on this&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -438,19 +517,16 @@
 </ul>
 <h2 id="mcetoc_1ja9d993o59">Media/Gallery</h2>
 <h2>Final</h2>
-<p><a href="https://youtu.be/snlZUcDc0M4" target="_blank" rel="noopener noreferrer">Final Showreel</a></p>
+<div class="post__iframe"><iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/snlZUcDc0M4?si=SgX3B7lFB_E9BuAU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="allowfullscreen"></iframe></div><br><a href="https://youtu.be/snlZUcDc0M4" target="_blank" rel="noopener noreferrer">Final Showreel</a></p>
+<p> </p>
 <h2>Progress <figure class="post__image"><img loading="lazy"  src="https://skullbuns.com/media/posts/2/Tito_Portfolio_Frames_0_To_115.mp4" alt="" width="NaN" height="NaN"></figure></h2>
 <h2 id="mcetoc_1ja9d993o5a">Contribution</h2>
 <h3 id="mcetoc_1ja9d993o5b">My Role</h3>
 <h3 id="mcetoc_1ja9d993o5c">Tools used</h3>
 <h4>Modelling + Animation</h4>
 <ul>
-<li>3ds Max for Modelling and Animation (Keyframes, Morph targets etc.)</li>
-</ul>
-<h4>Rendering</h4>
-<ul>
-<li>3ds Max Scanline render</li>
-<li>Unreal Engine Cinematic toolset for the 3 other animations</li>
+<li><strong>3ds Max</strong> (Modelling and Animation using Keyframes, Morph targets, Link and various other constraints.)</li>
+<li><strong>Unreal Engine</strong> (Cinematic animator and rendering)</li>
 </ul>
 <p> </p>
 <h2 id="mcetoc_1ja9d993o5d">Reflection</h2>
