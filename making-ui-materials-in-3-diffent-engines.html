@@ -1,0 +1,114 @@
+<!DOCTYPE html><html lang="en-gb"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Making UI Materials in 3 Different Engines - Sophie Wheldon Portfolio</title><meta name="description" content="The goal of this project is to learn how to create UI materials and shaders in 3 different Game engines:&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="stylesheet" href="https://skullbuns.com/media/plugins/syntaxHighlighter/prism-black.css"><link rel="canonical" href="https://skullbuns.com/making-ui-materials-in-3-diffent-engines.html"><link rel="alternate" type="application/atom+xml" href="https://skullbuns.com/feed.xml" title="Sophie Wheldon Portfolio - RSS"><link rel="alternate" type="application/json" href="https://skullbuns.com/feed.json" title="Sophie Wheldon Portfolio - JSON"><meta property="og:title" content="Making UI Materials in 3 Different Engines"><meta property="og:site_name" content="Sophie Wheldon Portfolio"><meta property="og:description" content="The goal of this project is to learn how to create UI materials and shaders in 3 different Game engines:&hellip;"><meta property="og:url" content="https://skullbuns.com/making-ui-materials-in-3-diffent-engines.html"><meta property="og:type" content="article"><link rel="stylesheet" href="https://skullbuns.com/assets/css/style.css?v=116950e11092bf3b28017451e3747b99"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://skullbuns.com/making-ui-materials-in-3-diffent-engines.html"},"headline":"Making UI Materials in 3 Different Engines","datePublished":"2026-03-26T12:40+00:00","dateModified":"2026-03-26T13:06+00:00","description":"The goal of this project is to learn how to create UI materials and shaders in 3 different Game engines:&hellip;","author":{"@type":"Person","name":"Sophie Wheldon","url":"https://skullbuns.com/authors/sophie-wheldon/"},"publisher":{"@type":"Organization","name":"Sophie Wheldon"}}</script><noscript><style>img[loading] {
+                        opacity: 1;
+                    }</style></noscript><link rel="stylesheet" href="https://skullbuns.com/media/plugins/coreLightboxGallery/photoswipe.min.css"><style>:root {
+		       	 --pswp-bg: #000000;
+					 --pswp-placeholder-bg: rgba(38, 40, 44, 1);
+					 --pswp-ui-bg: rgba(38, 40, 44, .5);
+                --pswp-ui-color: #ffffff;
+                --pswp-icon-stroke-width: 1.5;
+                --pswp-icon-size: 24px;
+            }
+
+				.pswp--zoomed-in .pswp__zoom-icn-bar-v {
+					display: none;
+				}</style></head><body class="page-template lines"><div class="container lines lines--right"><header class="header"><a href="https://skullbuns.com/" class="logo">Sophie Wheldon Portfolio</a><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Menu">Menu</button><ul class="navbar__menu"><li><a href="www.linkedin.com/in/SophWheldon" target="_blank">LinkedIn</a></li><li><a href="https://skullbuns.itch.io" target="_self">Itch.io</a></li></ul></nav></header><main class="main page"><article class="content"><header class="content__inner content__header"><h1 class="content__title">Making UI Materials in 3 Different Engines</h1></header><div class="content__inner"><div class="content__entry"><p>The goal of this project is to learn how to create UI materials and shaders in 3 different Game engines: Godot, Unreal and Unity. More specifically, the aim is to create an ability cooldown UI system inspired by several hero shooters and similar genres.</p><p>TODO:</p><ul><li>Reference <a href="https://lawsofux.com/">https://lawsofux.com/</a></li><li>Maybe a peak like timer where the cooldown is split into bars for each second, the bars grow to the size of the cooldown??</li></ul><p> </p><h2 id="gathering-inspiration">Gathering inspiration</h2><p>I started by gathering inspiration from games that heavily feature distinct abilities. I am also looking at the default layouts without any customisation or accessibilty settings.</p><h3 id="warframe">Warframe</h3><figure class="post__image"><img loading="lazy" src="https://skullbuns.com/media/posts/15/Warframe07112020-084133-44740.jpg" alt="" width="1920" height="1080" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://skullbuns.com/media/posts/15/responsive/Warframe07112020-084133-44740-xs.jpg 384w, https://skullbuns.com/media/posts/15/responsive/Warframe07112020-084133-44740-sm.jpg 600w, https://skullbuns.com/media/posts/15/responsive/Warframe07112020-084133-44740-md.jpg 768w, https://skullbuns.com/media/posts/15/responsive/Warframe07112020-084133-44740-lg.jpg 1200w, https://skullbuns.com/media/posts/15/responsive/Warframe07112020-084133-44740-xl.jpg 1600w"></figure><p>Warframe has a very unobtrusive display for the current characters abilities. A horizontal progress bar displays the users current energy, with the actual number displayed below. Above the bar is the 4 Warframe-specific abilities, represented with iconography. This system relies on colouring these icons based on the abilities status:</p><ul><li><strong>Blue </strong>signifies an ability is currently <strong>active</strong></li><li><strong>White </strong>signifies an ability is <strong>ready</strong> to be cast </li><li><strong>Grey </strong>signifies an ability is <strong>not ready</strong></li></ul><p>A potential issue with this colour coding system is colour blind users may struggle to discern which colour and state the ability is in</p><figure class="post__image post__image--center"><figure class="post__image"><img loading="lazy" src="https://skullbuns.com/media/posts/15/Screenshot-2026-03-26-112838.png" alt="" width="1298" height="729" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://skullbuns.com/media/posts/15/responsive/Screenshot-2026-03-26-112838-xs.png 384w, https://skullbuns.com/media/posts/15/responsive/Screenshot-2026-03-26-112838-sm.png 600w, https://skullbuns.com/media/posts/15/responsive/Screenshot-2026-03-26-112838-md.png 768w, https://skullbuns.com/media/posts/15/responsive/Screenshot-2026-03-26-112838-lg.png 1200w, https://skullbuns.com/media/posts/15/responsive/Screenshot-2026-03-26-112838-xl.png 1600w"></figure><br><figcaption>Same image with a Protanopia filter applied.</figcaption></figure><p>However, there are some strengths of this display. The energy bar has a pulsating animation, making the bar feel as if it is made from pure energy itself. This is arguably much more immersive than just having a flat progress bar.</p><h3 id="overwatch">Overwatch</h3><p>Overwatch takes an opposite approach. Clean, flat and easy to read, Overwatch's UI is more adapted to it's competitive multiplayer hero shooter genre. One thing to note while comparing is that, whilst Warframe uses a shared energy system for most abilities, Overwatch has dedicated cooldowns for each one.  </p><div class="gallery-wrapper-wrapper"><div class="gallery"><div class="gallery" data-columns="3" data-is-empty="false"><figure class="gallery__item"><a href="https://skullbuns.com/media/posts/15/gallery/3018426099_preview_New-Project2.png" data-pswp-width="1280" data-pswp-height="720"><img loading="lazy" src="https://skullbuns.com/media/posts/15/gallery/3018426099_preview_New-Project2-thumbnail.png" alt="" width="768" height="432"></a></figure><figure class="gallery__item"><a href="https://skullbuns.com/media/posts/15/gallery/c8wl0b7j6kt81.png" data-pswp-width="3840" data-pswp-height="2160"><img loading="lazy" src="https://skullbuns.com/media/posts/15/gallery/c8wl0b7j6kt81-thumbnail.png" alt="" width="768" height="432"></a></figure></div></div></div><p>Whilst the colours are customisable, the general principle remains similar to the icons from Warframe but with enhanced visual changes for different states:</p><ul><li>When an ability is<strong> not ready</strong>, the entire panel becomes <strong>crossed out</strong> and the icon is faded away. </li><li>When an ability is <strong>on cooldown</strong>, the button is greyed out and becomes a (bottom-to-top) <strong>vertical progress bar</strong>, with the <strong>seconds remaining overlayed</strong>. </li><li>An <strong>active </strong>ability will have a <strong>solid colour</strong> overlay.</li></ul><p>Its arguable whether the timer is necessary. Whilst a split second makes a big difference in a multiplayer FPS game, most skilled players will be focused on aiming and the 3D space around them rather than watching a timer tick down. On the other hand, seeing the exact amount of seconds left could be enough information to decide whether commiting to a certain play is a good idea or not. </p><h2 id="destiny-2">Destiny 2</h2><figure class="post__image post__image--center"><figure class="post__image"><img loading="lazy" src="https://skullbuns.com/media/posts/15/Destiny-207142020-064034-6979.jpg" alt="" width="1920" height="1080" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://skullbuns.com/media/posts/15/responsive/Destiny-207142020-064034-6979-xs.jpg 384w, https://skullbuns.com/media/posts/15/responsive/Destiny-207142020-064034-6979-sm.jpg 600w, https://skullbuns.com/media/posts/15/responsive/Destiny-207142020-064034-6979-md.jpg 768w, https://skullbuns.com/media/posts/15/responsive/Destiny-207142020-064034-6979-lg.jpg 1200w, https://skullbuns.com/media/posts/15/responsive/Destiny-207142020-064034-6979-xl.jpg 1600w"></figure></figure><p>Destiny 2 was the final game looked at. It follows a similar approach to Overwatch by making the ability icon/panel a progress bar for time remaining when on cooldown. It also features a progress bar for the cooldown of the Super (A powerful, less frequently available ability) above the smaller cooldowns and weapon information.  </p><p>Destiny 2 also opts for a flat UI design, comprised mostly of both opaque and transparent boxes with some icons to show what the user has equipped. It uses colour to display elements and types rather than the ability status itself.  A potential issue is that abilities on cooldown could blend in with the rest of the game world, especially when looking at bright white areas, as they are essentially only a small transparent box with very thin white borders and equally transparent iconography.</p><h2 id="destiny-2">Final Overview</h2><p>Here is the main takeaways I got organised into a table</p><table style="border-collapse: collapse; width: 100%;" border="1"><tbody><tr><td style="width: 22.1113%;"> </td><td style="width: 29.8146%;"><strong>Warframe</strong></td><td style="width: 23.2525%;"><strong>Overwatch</strong></td><td style="width: 24.8217%;"><strong>Destiny 2</strong></td></tr><tr><td style="width: 22.1113%;"><strong>Ability Cost</strong></td><td style="width: 29.8146%;">Resource-based </td><td style="width: 23.2525%;">Cooldown timer</td><td style="width: 24.8217%;">Cooldown Timer</td></tr><tr><td style="width: 22.1113%;"><strong>Design Style</strong></td><td style="width: 29.8146%;">'Fluid', glowing elements.</td><td style="width: 23.2525%;">Flat</td><td style="width: 24.8217%;">Flat </td></tr><tr><td style="width: 22.1113%;"><strong>How Ability Status is conveyed</strong></td><td style="width: 29.8146%;">Colour Change Only</td><td style="width: 23.2525%;">Colour + Progress bar + integer timer</td><td style="width: 24.8217%;">Colour + Progress Bar</td></tr><tr><td style="width: 22.1113%;"><strong>Potential Flaws</strong></td><td style="width: 29.8146%;">Overreliant on colour</td><td style="width: 23.2525%;">The timer..</td><td style="width: 24.8217%;">Transparent white elements can be lost easily</td></tr><tr><td style="width: 22.1113%;"><strong>Features I Like</strong></td><td style="width: 29.8146%;">Energy bar feels lively - mental connection</td><td style="width: 23.2525%;">Also the timer..</td><td style="width: 24.8217%;">Clean design with a focus on widths rather than strange shapes</td></tr></tbody></table></div></div></article></main><footer class="footer"><div class="footer__left"><div class="footer__copy">Powered by Publii</div></div><button onclick="backToTopFunction()" id="backToTop" class="footer__bttop" aria-label="Back to top" title="Back to top"><svg><use xlink:href="https://skullbuns.com/assets/svg/svg-map.svg#toparrow"/></svg></button></footer></div><script>window.publiiThemeMenuConfig = { mobileMenuMode: 'sidebar', animationSpeed: 300, submenuWidth: 'auto', doubleClickTime: 500, mobileMenuExpandableSubmenus: true, relatedContainerForOverlayMenuSelector: '.navbar', };</script><script defer="defer" src="https://skullbuns.com/assets/js/scripts.min.js?v=59269328060dc70acb340c4b9dccbcde"></script><script>function publiiDetectLoadedImages () {
+         var images = document.querySelectorAll('img[loading]:not(.is-loaded)');
+         for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+               images[i].classList.add('is-loaded');
+               images[i].parentNode.classList.remove('is-img-loading');
+            } else {
+               images[i].addEventListener('load', function () {
+                  this.classList.add('is-loaded');
+                  this.parentNode.classList.remove('is-img-loading');
+               }, false);
+            }
+         }
+      }
+      publiiDetectLoadedImages();</script><script type="module">import PhotoSwipeLightbox from 'https://skullbuns.com/media/plugins/coreLightboxGallery/photoswipe-lightbox.esm.min.js';
+				 const galleries = document.querySelectorAll('.gallery');
+				 galleries.forEach(gallery => {
+					  const lightbox = new PhotoSwipeLightbox({
+							gallery: gallery,
+children: 'figure',
+mainClass: 'pswp--custom-bg',
+showHideAnimationType: 'zoom',
+showAnimationDuration: 333,
+hideAnimationDuration: 333,
+easing: 'cubic-bezier(.4,0,.22,1)',
+initialZoomLevel: 'fit',
+secondaryZoomLevel: 'fill',
+imageClickAction: 'zoom-or-close',
+spacing: 0.1,
+loop: true,
+wheelToZoom: false,
+escKey: true,
+arrowKeys: true,
+padding: {"top":0,"bottom":0,"left":0,"right":0},
+arrowPrev: true,
+arrowNext: true,
+close: true,
+zoom: true,
+counter: true,
+preload: [1, 2],
+bgOpacity: 0.6,
+arrowPrevSVG: `<svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" class="pswp__icn" aria-hidden="true"><path d="M21 12L3 12M3 12L11.5 3.5M3 12L11.5 20.5"></path></svg>`,
+arrowNextSVG: `<svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" class="pswp__icn" aria-hidden="true"><path d="M21 12L3 12M3 12L11.5 3.5M3 12L11.5 20.5"></path></svg>`,
+closeSVG: `<svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" class="pswp__icn" aria-hidden="true"><path d="M6.75827 17.2426L12.0009 12M17.2435 6.75736L12.0009 12M12.0009 12L6.75827 6.75736M12.0009 12L17.2435 17.2426"></path></svg>`,
+zoomSVG: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="pswp__icn" aria-hidden="true"><path d="M8 11H14"></path><path class="pswp__zoom-icn-bar-v" d="M11 8V14"></path><path d="M17 17L21 21"></path><path d="M3 11C3 15.4183 6.58172 19 11 19C13.213 19 15.2161 18.1015 16.6644 16.6493C18.1077 15.2022 19 13.2053 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11Z"></path></svg>`,
+                    pswpModule: () => import('https://skullbuns.com/media/plugins/coreLightboxGallery/photoswipe.esm.min.js'),
+
+					  });
+					  
+				 lightbox.on('uiRegister', () => {
+					  
+				 lightbox.pswp.ui.registerElement({
+					  name: 'download-button',
+					  order: 8,
+					  isButton: true,
+					  tagName: 'a',
+					  html: `<svg stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" fill="none" class="pswp__icn" aria-hidden="true"><path d="M6 20L18 20"></path><path d="M12 4V16M12 16L15.5 12.5M12 16L8.5 12.5"></path></svg>`,
+					  onInit: (el, pswp) => {
+							el.setAttribute('download', '');
+							el.setAttribute('target', '_blank');
+							el.setAttribute('rel', 'noopener');
+							pswp.on('change', () => {
+								 el.href = pswp.currSlide.data.src;
+							});
+					  }
+				 });
+			
+
+				 lightbox.pswp.ui.registerElement({
+					  name: 'custom-caption',
+					  order: 9,
+					  isButton: false,
+					  appendTo: 'root',
+					  html: '',
+					  onInit: (el, pswp) => {
+							pswp.on('change', () => {
+								 const currSlideElement = pswp.currSlide.data.element.closest('figure');
+								 let captionHTML = '';
+								 if (currSlideElement) {
+									  const figCaption = currSlideElement.querySelector('figcaption');
+									  if (figCaption) {
+											captionHTML = figCaption.innerHTML;
+									  } else {
+											captionHTML = currSlideElement.querySelector('img')?.getAttribute('alt') || '';
+									  }
+								 }
+								 if (captionHTML.trim()) {
+									  el.innerHTML = captionHTML;
+									  el.classList.remove('hidden-caption-content'); 
+								 } else {
+									  el.innerHTML = '';
+									  el.classList.add('hidden-caption-content'); 
+								 }
+							});
+					  }
+				 });
+			
+				 });
+			
+					  lightbox.init();
+				 });</script><script defer="defer" src="https://skullbuns.com/media/plugins/syntaxHighlighter/prism.js"></script><script defer="defer" src="https://skullbuns.com/media/plugins/syntaxHighlighter/prism-line-numbers.min.js"></script></body></html>
