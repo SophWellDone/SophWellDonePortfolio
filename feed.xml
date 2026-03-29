@@ -3,12 +3,40 @@
     <title>Sophie Wheldon Portfolio</title>
     <link href="https://skullbuns.com/feed.xml" rel="self" />
     <link href="https://skullbuns.com" />
-    <updated>2026-03-26T23:51:16+00:00</updated>
+    <updated>2026-03-29T17:03:28+01:00</updated>
     <author>
         <name>Sophie Wheldon</name>
     </author>
     <id>https://skullbuns.com</id>
 
+    <entry>
+        <title>UNSCALED DEVLOG</title>
+        <author>
+            <name>Sophie Wheldon</name>
+        </author>
+        <link href="https://skullbuns.com/unscaled-devblog.html"/>
+        <id>https://skullbuns.com/unscaled-devblog.html</id>
+            <category term="Work In Progress"/>
+            <category term="Godot"/>
+            <category term="Blog"/>
+
+        <updated>2026-03-29T16:59:50+01:00</updated>
+            <summary>
+                <![CDATA[
+                    UNSCALED is a game project I am currently working on solo. I aim to release this game commercially after I&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p><strong>UNSCALED </strong>is a game project I am currently working on solo. I aim to release this game commercially after I feel it is ready.</p>
+<figure class="post__image"><img loading="lazy"  src="https://skullbuns.com/media/posts/17/thumbnail.png" alt="" width="1155" height="645" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://skullbuns.com/media/posts/17/responsive/thumbnail-xs.png 384w ,https://skullbuns.com/media/posts/17/responsive/thumbnail-sm.png 600w ,https://skullbuns.com/media/posts/17/responsive/thumbnail-md.png 768w ,https://skullbuns.com/media/posts/17/responsive/thumbnail-lg.png 1200w ,https://skullbuns.com/media/posts/17/responsive/thumbnail-xl.png 1600w"></figure>
+<h2>Posts</h2>
+<ul>
+<li><a href="https://skullbuns.com/unscaled-1-intro.html"></a><a href="https://skullbuns.com/unscaled-1-intro.html">UNSCALED 1 - INTRO</a></li>
+</ul>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Blog - Making UI Materials in 3 Different Engines</title>
         <author>
@@ -25,7 +53,7 @@
             </summary>
         <content type="html">
             <![CDATA[
-                <p>The goal of this project is to learn how to create UI materials and shaders in 3 different Game engines: Godot, Unreal and Unity. More specifically, the aim is to create an ability cooldown UI system inspired by several hero shooters and similar genres.</p>
+                <p>The goal of this project is to <strong>learn how to create UI materials and shaders in 3 different Game engines: Godot, Unreal and Unity. </strong>More specifically, the aim is to create an ability cooldown UI system inspired by several hero shooters and similar genres.</p>
 <p>TODO: Maybe a peak like timer where the cooldown is split into bars for each second, the bars grow to the size of the cooldown??</p>
 <p> </p>
 <h2 id="gathering-inspiration">Gathering inspiration</h2>
@@ -224,6 +252,122 @@ float progress_mask(vec2 uv){
 }</code></pre>
 <p>By attaching a slider to the fill_progress parameter the shader can be animated</p>
 <figure class="post__image"><img loading="lazy"  src="https://skullbuns.com/media/posts/15/SliderGodot-1.gif" alt="" width="445" height="242"></figure>
+<p>When using the<code> step(</code>) function to make hard edges, the values were not centered yet again and they only became visible from 0.5 onwards.</p>
+<figure class="post__image"><img loading="lazy"  src="https://skullbuns.com/media/posts/15/incorrect-start.png" alt="" width="227" height="190" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://skullbuns.com/media/posts/15/responsive/incorrect-start-xs.png 384w ,https://skullbuns.com/media/posts/15/responsive/incorrect-start-sm.png 600w ,https://skullbuns.com/media/posts/15/responsive/incorrect-start-md.png 768w ,https://skullbuns.com/media/posts/15/responsive/incorrect-start-lg.png 1200w ,https://skullbuns.com/media/posts/15/responsive/incorrect-start-xl.png 1600w"></figure>
+<h4>Overcoming Repeating issues</h4>
+<p>I decided to try something different. I booted up demsos graphic calculator to specifically test this diagnoal masking function. It didnt take too long to create a new solution. The red/darker area indicates where border pixels will be fully white, whilst the orange space could be used for a smoother gradient edge.</p>
+<figure class="post__image"><img loading="lazy"  src="https://skullbuns.com/media/posts/15/DesmosGraph2.gif" alt="" width="1253" height="458"></figure>
+<pre class="language-glsl line-numbers"><code>// Diagonal Ability Cooldown Shader by Sophie Wheldon
+shader_type canvas_item;
+
+const vec2 BORDER_WIDTH = vec2(2,2); // pixels
+const vec2 PANEL_SIZE = vec2(64, 64); //pixels
+
+// Percentage as a range from 0 to 1. display cooldown remaining on this ability.
+uniform float fill_progress = 1.0;
+ 
+//Defines the size of the grey boundary. This percent will be added atop the fill_progress
+// to create a semi-transparent section of the boundary, even when fill_progress is at 0% 
+uniform float edge_smooth = 0.1; 
+
+// Alpha values for the two boundaries above.
+uniform float fill_alpha = 1.0;
+uniform float fill_smooth = 0.5;
+
+
+
+// Erases diagonal border the lower fill_progress is.
+float progress_mask(vec2 uv){
+	
+	// returns 0 to 1 based on how close to the diagonal center this pixel is
+	float test_value = abs(uv.x+uv.y-1.0);
+	
+	// completely in the mask - this percent fill has been reached
+	if (test_value &gt; 1.0-fill_progress){
+		return fill_alpha; 
+		}
+	// smooth edge - keeps corners even when  at 0%
+	if (test_value &gt; 1.0-fill_progress-edge_smooth){
+		return fill_smooth; 
+		}
+	return 0.0;	
+}
+
+// Checks if uv coordinate is near enough to the edge to be in the border.
+bool is_border(vec2 uv){
+	vec2 min_border_uv = BORDER_WIDTH/PANEL_SIZE;
+	return (uv.x &gt;= 1.0-min_border_uv.x) || (uv.y &gt;= 1.0-min_border_uv.y)||(uv.x&lt;min_border_uv.x)||(uv.y&lt;min_border_uv.y);
+}
+
+// Snaps UV coordinate to nearest world-space pixel.
+vec2 uv_to_pixel_coordinate(vec2 uv){
+	vec2 pixel_step = vec2(1.0) / PANEL_SIZE;
+	//vec2 pixel_offset = pixel_step * 0.5;
+	
+	return floor((uv) / pixel_step) * pixel_step;
+}
+
+
+void fragment(){
+	vec2 pixel_uv = uv_to_pixel_coordinate((UV));
+	
+	COLOR = vec4(0.0);
+	if (is_border(pixel_uv)){
+		COLOR = vec4(1.0 * progress_mask(UV));
+	}	
+}
+
+</code></pre>
+<figure class="post__image"><img loading="lazy"  src="https://skullbuns.com/media/posts/15/GodotSlider2.gif" alt="" width="233" height="160"></figure>
+<p>The final step was making everything use uniform variables for UI designers to be able to customise the border. To line up with the original plan, colours were added with an optional system for lerping the colour based on fill progress.</p>
+<pre class="language-glsl line-numbers"><code>group_uniforms colour_settings;
+
+// Alpha values for the two boundaries above, plus the boundary outside of the current progress.
+uniform vec4 solid_colour : source_color = vec4(0.278, 0.675, 0.949,1.0);
+uniform vec4 smooth_colour : source_color = vec4(0.278, 0.675, 0.949, 0.5);
+uniform vec4 empty_colour : source_color = vec4(1.0, 1.0, 1.0, 0.196);
+
+//Optionally lerp colour for progress value too
+uniform bool change_colour_with_progress = true;
+uniform vec4 solid_low_colour : source_color = vec4(1.0, 0.247, 0.349,1.0);
+uniform vec4 smooth_low_colour : source_color = vec4(1.0, 0.247, 0.349,0.5);
+
+// Erases diagonal border the lower fill_progress is. 
+// Note: Now returns a vec4 colour rather than a float
+vec4 get_progress_colour(vec2 uv){
+	
+	// returns 0 to 1 based on how close to the diagonal center this pixel is
+	float test_value = flip_h ? abs(uv.x+uv.y-1.0) : 1.0 - abs(uv.x+uv.y-1.0);
+	
+	// completely in the mask - this percent fill has been reached
+	if (test_value &gt; 1.0-fill_progress){
+		if (change_colour_with_progress){
+			return mix(solid_low_colour, solid_colour, fill_progress);
+		}
+		return solid_colour;
+	}
+
+	// smooth edge - keeps corners even when  at 0%
+	if (test_value &gt; 1.0-fill_progress-edge_smooth){
+		if (change_colour_with_progress){
+			return mix(smooth_low_colour, smooth_colour, fill_progress);
+			}
+		return smooth_colour; 
+		}
+		
+	return empty_colour;
+}
+</code></pre>
+<figure class="post__image"><img loading="lazy"  src="https://skullbuns.com/media/posts/15/biggview.png" alt="" width="803" height="354" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://skullbuns.com/media/posts/15/responsive/biggview-xs.png 384w ,https://skullbuns.com/media/posts/15/responsive/biggview-sm.png 600w ,https://skullbuns.com/media/posts/15/responsive/biggview-md.png 768w ,https://skullbuns.com/media/posts/15/responsive/biggview-lg.png 1200w ,https://skullbuns.com/media/posts/15/responsive/biggview-xl.png 1600w"></figure>
+<h3>Code review</h3>
+<p>I decided to leave it here as I had already spent many hours (and several minutes-worth of writing on this post) working on the angular shader.</p>
+<p>The code evolved a lot and I learned a lot working on it! But to make the process of porting this over more effecient, I can use this knowledge to plan the steps I need to take to remake this:</p>
+<ul>
+<li><strong>Define the variables</strong> - 5 Colours, a border_size, the current progress,</li>
+<li><strong>Make a border </strong>by figuring out big the outer x pixels of the UV space is.</li>
+<li><strong>Cut out the diagonal </strong>by adding the x and v values</li>
+<li><strong>Create the smooth area </strong>by repeating the check above with a lower threshold.</li>
+</ul>
 <h2>Bibliography</h2>
 <p>Cherry, K. (2023). <i>How we use selective attention to filter information and focus</i>. [online] Verywell Mind. Available at: <a href="https://www.verywellmind.com/what-is-selective-attention-2795022">https://www.verywellmind.com/what-is-selective-attention-2795022</a>. [Accessed 26/03/2026]</p>
 <p>‌</p>
@@ -238,6 +382,7 @@ float progress_mask(vec2 uv){
         </author>
         <link href="https://skullbuns.com/project-template-4.html"/>
         <id>https://skullbuns.com/project-template-4.html</id>
+            <category term="Work In Progress"/>
             <category term="3D Modelling"/>
             <category term="2026"/>
 
@@ -402,7 +547,7 @@ float progress_mask(vec2 uv){
 </tbody>
 </table>
 <h2>Reflection</h2>
-<p>I think i did a crap job</p>
+<p>[To be written.]</p>
 <p> </p>
 <p> </p>
 <p> </p>
