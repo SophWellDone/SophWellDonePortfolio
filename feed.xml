@@ -3,7 +3,7 @@
     <title>Sophie Wheldon Portfolio</title>
     <link href="https://skullbuns.com/feed.xml" rel="self" />
     <link href="https://skullbuns.com" />
-    <updated>2026-03-29T17:03:28+01:00</updated>
+    <updated>2026-03-31T03:48:18+01:00</updated>
     <author>
         <name>Sophie Wheldon</name>
     </author>
@@ -32,7 +32,19 @@
 <figure class="post__image"><img loading="lazy"  src="https://skullbuns.com/media/posts/17/thumbnail.png" alt="" width="1155" height="645" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://skullbuns.com/media/posts/17/responsive/thumbnail-xs.png 384w ,https://skullbuns.com/media/posts/17/responsive/thumbnail-sm.png 600w ,https://skullbuns.com/media/posts/17/responsive/thumbnail-md.png 768w ,https://skullbuns.com/media/posts/17/responsive/thumbnail-lg.png 1200w ,https://skullbuns.com/media/posts/17/responsive/thumbnail-xl.png 1600w"></figure>
 <h2>Posts</h2>
 <ul>
-<li><a href="https://skullbuns.com/unscaled-1-intro.html"></a><a href="https://skullbuns.com/unscaled-1-intro.html">UNSCALED 1 - INTRO</a></li>
+<li><a href="https://skullbuns.com/unscaled-1-intro.html"></a><a href="https://skullbuns.com/unscaled-1-intro.html">UNSCALED 1 - INTRO</a>
+<ul>
+<li>Introduction to the project!</li>
+<li>Ability System breakdown</li>
+</ul>
+</li>
+<li><a href="https://skullbuns.com/unscaled-2-mesaryth.html">UNSCALED 2 - MESARYTH</a> 
+<ul>
+<li>More gameplay systems</li>
+<li>Character kit design + rules</li>
+<li>Some 3D + UI shaders!</li>
+</ul>
+</li>
 </ul>
             ]]>
         </content>
@@ -368,6 +380,20 @@ vec4 get_progress_colour(vec2 uv){
 <li><strong>Cut out the diagonal </strong>by adding the x and v values</li>
 <li><strong>Create the smooth area </strong>by repeating the check above with a lower threshold.</li>
 </ul>
+<h3>Unreal Engine</h3>
+<p>To start the Unreal Engine version, I created a UI material and got the center UV working. The basic drag-and-drop math nodes are very quick to prototype with!</p>
+<figure class="post__image"><img loading="lazy"  src="https://skullbuns.com/media/posts/15/Screenshot-2026-03-29-212140.png" alt="" width="1440" height="370" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://skullbuns.com/media/posts/15/responsive/Screenshot-2026-03-29-212140-xs.png 384w ,https://skullbuns.com/media/posts/15/responsive/Screenshot-2026-03-29-212140-sm.png 600w ,https://skullbuns.com/media/posts/15/responsive/Screenshot-2026-03-29-212140-md.png 768w ,https://skullbuns.com/media/posts/15/responsive/Screenshot-2026-03-29-212140-lg.png 1200w ,https://skullbuns.com/media/posts/15/responsive/Screenshot-2026-03-29-212140-xl.png 1600w"></figure>
+<p>Generated the pixelated UV was a bit more challenging. I thought there was a shortcut with the 'Pixel Size' input, however I ended up realising that the UV looked exactly the same after the calculations. I believe this is as the pixel size will scale to the amount of pixels rendered, so the size will always be small enough to be unnoticed.</p>
+<p>The solution is the same as the Godot system - input the panel size as a Vector2 and use that instead.</p>
+<h2><figure class="post__image"><img loading="lazy"  src="https://skullbuns.com/media/posts/15/pixeled.png" alt="" width="1465" height="483" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://skullbuns.com/media/posts/15/responsive/pixeled-xs.png 384w ,https://skullbuns.com/media/posts/15/responsive/pixeled-sm.png 600w ,https://skullbuns.com/media/posts/15/responsive/pixeled-md.png 768w ,https://skullbuns.com/media/posts/15/responsive/pixeled-lg.png 1200w ,https://skullbuns.com/media/posts/15/responsive/pixeled-xl.png 1600w"></figure></h2>
+<p> </p>
+<p>I couldn't find a way to do comparisons, so had to experiment with splitting the uv vector and comparing each indivudally. This got me might top and right sides</p>
+<figure class="post__image"><img loading="lazy"  src="https://skullbuns.com/media/posts/15/topcorner-2.png" alt="" width="1697" height="560" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://skullbuns.com/media/posts/15/responsive/topcorner-2-xs.png 384w ,https://skullbuns.com/media/posts/15/responsive/topcorner-2-sm.png 600w ,https://skullbuns.com/media/posts/15/responsive/topcorner-2-md.png 768w ,https://skullbuns.com/media/posts/15/responsive/topcorner-2-lg.png 1200w ,https://skullbuns.com/media/posts/15/responsive/topcorner-2-xl.png 1600w"></figure>
+<h2>Progress Mask</h2>
+<p>The progress mask was nice and easy to do, with little errors.</p>
+<figure class="post__image"><img loading="lazy"  src="https://skullbuns.com/media/posts/15/Screenshot-2026-03-29-223040.png" alt="" width="1722" height="731" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://skullbuns.com/media/posts/15/responsive/Screenshot-2026-03-29-223040-xs.png 384w ,https://skullbuns.com/media/posts/15/responsive/Screenshot-2026-03-29-223040-sm.png 600w ,https://skullbuns.com/media/posts/15/responsive/Screenshot-2026-03-29-223040-md.png 768w ,https://skullbuns.com/media/posts/15/responsive/Screenshot-2026-03-29-223040-lg.png 1200w ,https://skullbuns.com/media/posts/15/responsive/Screenshot-2026-03-29-223040-xl.png 1600w"></figure>
+<p>Multiply the two results to get the border working!</p>
+<h2><figure class="post__image"><img loading="lazy"  src="https://skullbuns.com/media/posts/15/Screenshot-2026-03-29-223342.png" alt="" width="1716" height="715" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://skullbuns.com/media/posts/15/responsive/Screenshot-2026-03-29-223342-xs.png 384w ,https://skullbuns.com/media/posts/15/responsive/Screenshot-2026-03-29-223342-sm.png 600w ,https://skullbuns.com/media/posts/15/responsive/Screenshot-2026-03-29-223342-md.png 768w ,https://skullbuns.com/media/posts/15/responsive/Screenshot-2026-03-29-223342-lg.png 1200w ,https://skullbuns.com/media/posts/15/responsive/Screenshot-2026-03-29-223342-xl.png 1600w"></figure></h2>
 <h2>Bibliography</h2>
 <p>Cherry, K. (2023). <i>How we use selective attention to filter information and focus</i>. [online] Verywell Mind. Available at: <a href="https://www.verywellmind.com/what-is-selective-attention-2795022">https://www.verywellmind.com/what-is-selective-attention-2795022</a>. [Accessed 26/03/2026]</p>
 <p>‌</p>
@@ -561,20 +587,20 @@ vec4 get_progress_colour(vec2 uv){
         </author>
         <link href="https://skullbuns.com/project-template-3.html"/>
         <id>https://skullbuns.com/project-template-3.html</id>
-        <media:content url="https://skullbuns.com/media/posts/8/river_crystals_final-2.png" medium="image" />
+        <media:content url="https://skullbuns.com/media/posts/8/Final-Town.png" medium="image" />
             <category term="Game Jam"/>
             <category term="2026"/>
 
         <updated>2026-01-30T08:53:37+00:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://skullbuns.com/media/posts/8/river_crystals_final-2.png" alt="" />
+                        <img src="https://skullbuns.com/media/posts/8/Final-Town.png" alt="" />
                     You are the revered Pictomancer of your tribe. You make paintings of faraway landscapes so magical their contents can be transformed into tangible resources for your tribe. Tribe of the&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://skullbuns.com/media/posts/8/river_crystals_final-2.png" class="type:primaryImage" alt="" /></p>
+                    <p><img src="https://skullbuns.com/media/posts/8/Final-Town.png" class="type:primaryImage" alt="" /></p>
                 <p></p>
 <h2></h2>
 <h2>Overview/Goal</h2>
@@ -585,7 +611,7 @@ vec4 get_progress_colour(vec2 uv){
 <h2>Media/Gallery</h2>
 <div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="3">
 <figure class="gallery__item"><a href="https://skullbuns.com/media/posts/8/gallery/image2.png" data-size="1690x939"><img loading="lazy" src="https://skullbuns.com/media/posts/8/gallery/image2-thumbnail.png" alt="" width="768" height="427"></a>
-<figcaption>Tthe 'Helping' phase, where the player chooses what to spend their resources on.</figcaption>
+<figcaption>The 'Helping' phase, where the player chooses what to spend their resources on.</figcaption>
 </figure>
 <figure class="gallery__item"><a href="https://skullbuns.com/media/posts/8/gallery/image.png" data-size="1693x945"><img loading="lazy" src="https://skullbuns.com/media/posts/8/gallery/image-thumbnail.png" alt="" width="768" height="429"></a>
 <figcaption>The 'Harvesting' phase, where the player chooses what parts of the painting to gather from.</figcaption>

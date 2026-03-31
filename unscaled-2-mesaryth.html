@@ -1,0 +1,102 @@
+<!DOCTYPE html><html lang="en-gb"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>UNSCALED 2 - MESARYTH - Sophie Wheldon Portfolio</title><meta name="description" content="Welcome back! In UNSCALED 1 I talk about the general premise of the game. This entry is more of a&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="stylesheet" href="https://skullbuns.com/media/plugins/syntaxHighlighter/prism-black.css"><link rel="canonical" href="https://skullbuns.com/unscaled-2-mesaryth.html"><link rel="alternate" type="application/atom+xml" href="https://skullbuns.com/feed.xml" title="Sophie Wheldon Portfolio - RSS"><link rel="alternate" type="application/json" href="https://skullbuns.com/feed.json" title="Sophie Wheldon Portfolio - JSON"><meta property="og:title" content="UNSCALED 2 - MESARYTH"><meta property="og:site_name" content="Sophie Wheldon Portfolio"><meta property="og:description" content="Welcome back! In UNSCALED 1 I talk about the general premise of the game. This entry is more of a&hellip;"><meta property="og:url" content="https://skullbuns.com/unscaled-2-mesaryth.html"><meta property="og:type" content="article"><link rel="stylesheet" href="https://skullbuns.com/assets/css/style.css?v=116950e11092bf3b28017451e3747b99"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://skullbuns.com/unscaled-2-mesaryth.html"},"headline":"UNSCALED 2 - MESARYTH","datePublished":"2026-03-31T03:36+01:00","dateModified":"2026-03-31T03:49+01:00","description":"Welcome back! In UNSCALED 1 I talk about the general premise of the game. This entry is more of a&hellip;","author":{"@type":"Person","name":"Sophie Wheldon","url":"https://skullbuns.com/authors/sophie-wheldon/"},"publisher":{"@type":"Organization","name":"Sophie Wheldon"}}</script><noscript><style>img[loading] {
+                        opacity: 1;
+                    }</style></noscript></head><body class="post-template lines"><div class="container lines lines--right"><header class="header"><a href="https://skullbuns.com/" class="logo">Sophie Wheldon Portfolio</a><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Menu">Menu</button><ul class="navbar__menu"><li><a href="www.linkedin.com/in/SophWheldon" target="_blank">LinkedIn</a></li><li><a href="https://skullbuns.itch.io" target="_self">Itch.io</a></li></ul></nav></header><main class="main post"><article class="content"><header class="content__inner content__header"><h1 class="content__title">UNSCALED 2 - MESARYTH</h1><div class="content__meta"><div class="content__meta__left"><a href="https://skullbuns.com/authors/sophie-wheldon/" class="invert content__author" rel="author" title="Sophie Wheldon">Sophie Wheldon</a></div><div class="content__meta__right"><time datetime="2026-03-31T03:36" class="content__date">March 31, 2026</time><div class="content__updated">Updated on <time datetime="2026-03-31T03:36" class="content__date">March 31, 2026</time></div></div></div></header><div class="content__inner"><div class="content__entry"><p>Welcome back! In UNSCALED 1 I talk about the general premise of the game. This entry is more of a deep dive into how the characters kits will work. But if you want a quick visual, check out the embedded gameplay footage below! </p><div class="post__iframe"><iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/TGhXKjtuAAY?si=uIUU9TceW4-8NzGC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="allowfullscreen"></iframe></div><h2>The 6 input rule.</h2><p>To help keep the game accessible and conisistent input-wise, I devised a new golden rule for characters kits:</p><p>Each character has active 6 abilities. Each ability only has one assigned input or 'key' at a time. Therefore, <strong>only these 6 keys can contribute directly to abilities</strong> (the only exceptions being the unrelated WASD movement and camera controls).</p><p>But wait, Mesaryth has two different uses for her primary fire inputs!</p><ul><li>Usual - shoot alternating pistol shots</li><li>Fire a big cooldown shot when aiming with secondary fire.</li></ul><p>There solution lies in the wording: Each character has 6 <strong>active</strong> abilities. If we allow the currently active abilities to swap, more complex characters can still follow the rule.</p><figure class="post__image"><img loading="lazy" src="https://skullbuns.com/media/posts/18//6plus.png" alt="" width="276" height="138" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://skullbuns.com/media/posts/18//responsive/6plus-xs.png 384w, https://skullbuns.com/media/posts/18//responsive/6plus-sm.png 600w, https://skullbuns.com/media/posts/18//responsive/6plus-md.png 768w, https://skullbuns.com/media/posts/18//responsive/6plus-lg.png 1200w, https://skullbuns.com/media/posts/18//responsive/6plus-xl.png 1600w"></figure><p>Here is Mesaryth's ability set with two primary abilities. By default, her <strong>active </strong>primary will be the basic revolver shot, but this is changed when the Secondary_ReadyDrakeshot is held down:</p><pre class="language-gdscript line-numbers"><code># Start ability function in Secondary_ReadyDrakeshot.gd
+func start_ability()-&gt;void:
+	super()
+	aiming_drakeshot.emit()
+	
+	# Swap primary ability to the actual drakeshot fire
+	old_primary = this_character.ability_set.primary
+	old_primary.ability_disabled = true # Disable regular revolver fire primary
+	
+	ability_active = true
+	
+	if !ability_active:
+		return
+
+	# Enable the drakeshot fire primary ability
+	this_character.ability_set.primary = drakeshot_primary 
+	print("Drakeshot ready!")</code></pre><p>A lot more code goes into linking everything, handling weird exceptions etc. but this is the general flow of ability 'transformations'! I hope to use this to make complex but conistent ability combos. For example, a werewolf character who swaps between ranged combat and a more primal slash attack when a temporary ability is activated.</p><h2>Data-driven Gameplay Systems</h2><p>Lots of work has also gone into simlar modular, resource-driven gameplay systems. The health/hurtbox system is probably the most important of these, using custom HealthPool and DamageInstance classes for easy balancing and customisation!</p><pre class="language-gdscript line-numbers"><code>extends Resource
+class_name DamageInstance
+
+# Standard - x health is taken away.
+# Heal - x health is granted
+
+
+enum DAMAGE_TYPE {STANDARD, HEAL}
+@export var damage_type : DAMAGE_TYPE
+
+@export var value : float = 1.0
+
+@export var ignore_tags : Array[String] = ["Player"]
+</code></pre><p> DamageInstances aren't just a number - they allow for new damage types as well as ignoring certain hurtboxes with the same tag. For example, later on maybe only 'armor-piercing' abilities can penetrate shields, or there could be some kind of elemental damage system.</p><h2>Miscellaneous Additions</h2><h3>Crosshair + Healthbar UI Shaders</h3><p>I've made two shaders for the game: A crosshair canvas_item (UI) shader and a spatial healthbar shader. I did the crosshair first as it its relatively simple, for now only drawing a basic circle. I plan to extend this shader greatly, using paramaters for lots of user customisation such as adding extra lines, rings etc.</p><pre class="language-glsl line-numbers"><code>shader_type canvas_item;
+
+// Simple crosshair shader. Can use the control's rect_size to change
+// the crosshair size (recommended around 2x2px to 16x16 px)
+
+uniform sampler2D SCREEN_TEXTURE : hint_screen_texture, filter_linear_mipmap;
+
+uniform bool use_dot = true;
+
+uniform float dot_radius = 0.1;
+uniform vec4 dot_color : source_color = vec4(1.0, 1.0, 1.0, 1.0);
+uniform bool dot_invert = true;
+
+uniform bool use_dot_outline = true;
+uniform float dot_outline_width = 0.005;
+uniform vec4 dot_outline_color : source_color = vec4(0.0, 0.0, 0.0, 0.9);
+
+
+bool draw_dot(vec2 uv) {
+	float e = pow(uv.x-0.5, 2.0) + pow(uv.y-0.5, 2.0);
+	if (e &lt; dot_radius){
+		return true;
+	}
+	return false;
+}
+
+bool draw_dot_outline(vec2 uv){
+	float e = pow(uv.x-0.5, 2.0) + pow(uv.y-0.5, 2.0);
+	if (e &gt; dot_radius-dot_outline_width &amp;&amp; e &lt; dot_radius){
+		return true;
+	}
+return false;
+}
+
+
+void fragment() {
+	COLOR = vec4(0.0);
+	if (use_dot){
+		if (draw_dot(UV)){
+			if (dot_invert){
+			    // Get the current screen color
+			    vec4 screen_color = texture(SCREEN_TEXTURE, SCREEN_UV);
+			    // Invert the RGB components, keep Alpha the same
+			    COLOR = vec4(1.0 - screen_color.rgb, screen_color.a);
+			}
+			else{
+				COLOR = dot_color;	
+			}
+
+		}
+		
+	if (use_dot_outline){
+		if (draw_dot_outline(UV)){
+			COLOR += dot_outline_color;
+		}
+	}
+</code></pre><p>Below is the crosshair with invert_dot enabled.</p><figure class="post__image"><img loading="lazy" src="https://skullbuns.com/media/posts/18//crosshair.png" alt="" width="638" height="387" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://skullbuns.com/media/posts/18//responsive/crosshair-xs.png 384w, https://skullbuns.com/media/posts/18//responsive/crosshair-sm.png 600w, https://skullbuns.com/media/posts/18//responsive/crosshair-md.png 768w, https://skullbuns.com/media/posts/18//responsive/crosshair-lg.png 1200w, https://skullbuns.com/media/posts/18//responsive/crosshair-xl.png 1600w"> </figure><p>Healthbars are just as barebones currently, but will be updated as the HealthPool becomes more complex!</p><p> </p></div><footer class="content__footer"><div class="content__tag-share"><div class="content__share"></div></div></footer></div></article><div class="content__related"><h3 class="content__related__title">Related posts</h3><div class="l-grid l-grid--2"><article class="c-card"><div class="c-card__wrapper"><div class="c-card__content"><header><h2 class="c-card__title"><a href="https://skullbuns.com/unscaled-devblog.html" class="invert">UNSCALED DEVLOG</a></h2></header><footer class="c-card__meta"><a href="https://skullbuns.com/tags/blog/" class="c-card__tag">Blog</a></footer></div></div></article><article class="c-card"><div class="c-card__wrapper"><figure class="c-card__image is-img-loading"><img src="https://skullbuns.com/media/posts/16/thumbnail.png" srcset="https://skullbuns.com/media/posts/16/responsive/thumbnail-xs.png 384w, https://skullbuns.com/media/posts/16/responsive/thumbnail-sm.png 600w, https://skullbuns.com/media/posts/16/responsive/thumbnail-md.png 768w, https://skullbuns.com/media/posts/16/responsive/thumbnail-lg.png 1200w" sizes="(min-width: 37.5em) 80vw, 50vw" loading="lazy" height="645" width="1155" alt=""></figure><div class="c-card__content"><header><h2 class="c-card__title"><a href="https://skullbuns.com/unscaled-1-intro.html" class="invert">UNSCALED 1 - INTRO</a></h2></header><footer class="c-card__meta"><a href="https://skullbuns.com/tags/blog/" class="c-card__tag">Blog</a></footer></div></div></article></div></div></main><footer class="footer"><div class="footer__left"><div class="footer__copy">Powered by Publii</div></div><button onclick="backToTopFunction()" id="backToTop" class="footer__bttop" aria-label="Back to top" title="Back to top"><svg><use xlink:href="https://skullbuns.com/assets/svg/svg-map.svg#toparrow"/></svg></button></footer></div><script>window.publiiThemeMenuConfig = { mobileMenuMode: 'sidebar', animationSpeed: 300, submenuWidth: 'auto', doubleClickTime: 500, mobileMenuExpandableSubmenus: true, relatedContainerForOverlayMenuSelector: '.navbar', };</script><script defer="defer" src="https://skullbuns.com/assets/js/scripts.min.js?v=59269328060dc70acb340c4b9dccbcde"></script><script>function publiiDetectLoadedImages () {
+         var images = document.querySelectorAll('img[loading]:not(.is-loaded)');
+         for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+               images[i].classList.add('is-loaded');
+               images[i].parentNode.classList.remove('is-img-loading');
+            } else {
+               images[i].addEventListener('load', function () {
+                  this.classList.add('is-loaded');
+                  this.parentNode.classList.remove('is-img-loading');
+               }, false);
+            }
+         }
+      }
+      publiiDetectLoadedImages();</script><script defer="defer" src="https://skullbuns.com/media/plugins/syntaxHighlighter/prism.js"></script><script defer="defer" src="https://skullbuns.com/media/plugins/syntaxHighlighter/prism-line-numbers.min.js"></script></body></html>
