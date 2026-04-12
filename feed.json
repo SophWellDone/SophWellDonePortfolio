@@ -10,6 +10,24 @@
     },
     "items": [
         {
+            "id": "https://skullbuns.com/unscaled-devblog.html",
+            "url": "https://skullbuns.com/unscaled-devblog.html",
+            "title": "UNSCALED - A 3D INDIE GAME",
+            "summary": "UNSCALED is my biggest passion project - a full indie game that I plan to release whenever I feel it's&hellip;",
+            "content_html": "<p><strong>UNSCALED </strong>is my biggest passion project - a full indie game that I plan to release whenever I feel it's ready! Its a singleplayer, 3D hero-based movement shooter that has used and taught me so many game development related skills. </p>\n<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://skullbuns.com/media/posts/17/thumbnail.png\" alt=\"\" width=\"1155\" height=\"645\" sizes=\"(min-width: 37.5em) 1600px, 80vw\" srcset=\"https://skullbuns.com/media/posts/17/responsive/thumbnail-xs.png 384w ,https://skullbuns.com/media/posts/17/responsive/thumbnail-sm.png 600w ,https://skullbuns.com/media/posts/17/responsive/thumbnail-md.png 768w ,https://skullbuns.com/media/posts/17/responsive/thumbnail-lg.png 1200w ,https://skullbuns.com/media/posts/17/responsive/thumbnail-xl.png 1600w\"></figure>\n<p>As it is such a large project, I post 2 different types of content to showcase my work - devlog entries and deep dives. Devlog entries are videos showcasing progress and other less serious moments with the community for the game, whilst Deep Dives focus on my implementation of specific features / skills such as code, art, shaders or design philosophies!</p>\n<h2>Devlog Entries</h2>\n<h3>Most Recent</h3>\n<div class=\"post__iframe\"><iframe loading=\"lazy\" width=\"560\" height=\"315\" src=\"https://www.youtube-nocookie.com/embed/P5vhSqPZ6Rk?si=PRoI9U1X3yaHd-UY\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"allowfullscreen\"></iframe></div>\n<p> </p>\n<h3>Playlist</h3>\n<p><a href=\"https://www.youtube.com/playlist?list=PLmoOwjqW4kiEv187iQuOq-nl3vqGoEKvE\">Watch all of the devlog entries on YouTube!</a></p>\n<p> </p>\n<h2>Deep Dives</h2>\n<ul>\n<li><a href=\"#non-existing-post-with-id-16\"></a><a href=\"#non-existing-post-with-id-16\">UNSCALED 1 - INTRO</a>\n<ul>\n<li>Introduction to the project!</li>\n<li>Ability System breakdown</li>\n</ul>\n</li>\n<li><a href=\"https://skullbuns.com/unscaled-2-mesaryth.html\">UNSCALED 2 - MESARYTH</a> <br>\n<ul>\n<li>Character kit design + rules</li>\n<li>Some 3D + UI shaders!</li>\n</ul>\n</li>\n</ul>",
+            "image": "https://skullbuns.com/media/posts/17/UNSCALED-2-Mesaryth-Kit-0-8-screenshot.png",
+            "author": {
+                "name": "Sophie Wheldon"
+            },
+            "tags": [
+                   "Work In Progress",
+                   "Godot",
+                   "Blog"
+            ],
+            "date_published": "2026-03-29T16:59:50+01:00",
+            "date_modified": "2026-04-12T06:14:05+01:00"
+        },
+        {
             "id": "https://skullbuns.com/project-template-4.html",
             "url": "https://skullbuns.com/project-template-4.html",
             "title": "Myri - 3D Character Model and Rig ",
