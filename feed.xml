@@ -3,7 +3,7 @@
     <title>Sophie Wheldon Portfolio</title>
     <link href="https://skullbuns.com/feed.xml" rel="self" />
     <link href="https://skullbuns.com" />
-    <updated>2026-05-13T08:50:04+01:00</updated>
+    <updated>2026-05-13T09:17:52+01:00</updated>
     <author>
         <name>Sophie Wheldon</name>
     </author>
@@ -66,7 +66,7 @@
         </author>
         <link href="https://skullbuns.com/project-template-5.html"/>
         <id>https://skullbuns.com/project-template-5.html</id>
-        <media:content url="https://skullbuns.com/media/posts/13/river_crystals_final-2.png" medium="image" />
+        <media:content url="https://skullbuns.com/media/posts/13/TutorialMap_Revision2.png" medium="image" />
             <category term="Work In Progress"/>
             <category term="Unity"/>
             <category term="Level Design"/>
@@ -75,13 +75,13 @@
         <updated>2026-03-25T22:47:00+00:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://skullbuns.com/media/posts/13/river_crystals_final-2.png" alt="" />
+                        <img src="https://skullbuns.com/media/posts/13/TutorialMap_Revision2.png" alt="" />
                     I worked as a contractor on Ella-Stick, a game that is developed with the Nintento Switch DevKit for release for&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://skullbuns.com/media/posts/13/river_crystals_final-2.png" class="type:primaryImage" alt="" /></p>
+                    <p><img src="https://skullbuns.com/media/posts/13/TutorialMap_Revision2.png" class="type:primaryImage" alt="" /></p>
                 <p></p>
 <h2></h2>
 <h2>Overview/Goal</h2>
@@ -91,7 +91,7 @@
 <figure class="gallery__item"><a href="https://skullbuns.com/media/posts/13/gallery/HubWorld_Revision1.png" data-size="1439x1279"><img loading="lazy" src="https://skullbuns.com/media/posts/13/gallery/HubWorld_Revision1-thumbnail.png" alt="" width="768" height="683"></a>
 <figcaption>The revision of the 2D level plan that was used to create the whitebox.</figcaption>
 </figure>
-<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/13/gallery/envinunity.png" data-size="1001x667"><img loading="lazy" src="https://skullbuns.com/media/posts/13/gallery/envinunity-thumbnail.png" alt="" width="768" height="512"></a>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/13/gallery/envinunity-2.png" data-size="1027x436"><img loading="lazy" src="https://skullbuns.com/media/posts/13/gallery/envinunity-2-thumbnail.png" alt="" width="768" height="326"></a>
 <figcaption>Environment assets in-engine.</figcaption>
 </figure>
 </div></div>
