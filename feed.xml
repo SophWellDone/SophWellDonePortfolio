@@ -3,7 +3,7 @@
     <title>Sophie Wheldon Portfolio</title>
     <link href="https://skullbuns.com/feed.xml" rel="self" />
     <link href="https://skullbuns.com" />
-    <updated>2026-04-12T06:14:05+01:00</updated>
+    <updated>2026-05-13T08:50:04+01:00</updated>
     <author>
         <name>Sophie Wheldon</name>
     </author>
@@ -56,6 +56,96 @@
 </ul>
 </li>
 </ul>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Ella-stick - Levels &amp; 3D Assets for Nintendo Switch</title>
+        <author>
+            <name>Sophie Wheldon</name>
+        </author>
+        <link href="https://skullbuns.com/project-template-5.html"/>
+        <id>https://skullbuns.com/project-template-5.html</id>
+        <media:content url="https://skullbuns.com/media/posts/13/river_crystals_final-2.png" medium="image" />
+            <category term="Work In Progress"/>
+            <category term="Unity"/>
+            <category term="Level Design"/>
+            <category term="2026"/>
+
+        <updated>2026-03-25T22:47:00+00:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://skullbuns.com/media/posts/13/river_crystals_final-2.png" alt="" />
+                    I worked as a contractor on Ella-Stick, a game that is developed with the Nintento Switch DevKit for release for&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://skullbuns.com/media/posts/13/river_crystals_final-2.png" class="type:primaryImage" alt="" /></p>
+                <p></p>
+<h2></h2>
+<h2>Overview/Goal</h2>
+<p>I worked as a contractor on Ella-Stick, a game that is developed with the Nintento Switch DevKit for release for the Switch console on the Nintendo Store. I was contracted as a level designer for 42 hours. In that time, I worked with a Producer, Project Advisor and the rest of the team to work through assigned tasks.</p>
+<h2>Media/Gallery</h2>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="3">
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/13/gallery/HubWorld_Revision1.png" data-size="1439x1279"><img loading="lazy" src="https://skullbuns.com/media/posts/13/gallery/HubWorld_Revision1-thumbnail.png" alt="" width="768" height="683"></a>
+<figcaption>The revision of the 2D level plan that was used to create the whitebox.</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/13/gallery/envinunity.png" data-size="1001x667"><img loading="lazy" src="https://skullbuns.com/media/posts/13/gallery/envinunity-thumbnail.png" alt="" width="768" height="512"></a>
+<figcaption>Environment assets in-engine.</figcaption>
+</figure>
+</div></div>
+<h2>Contribution</h2>
+<h3>Tools used</h3>
+<ul>
+<li><strong>Blender </strong>(All 3D Modelling)</li>
+<li><strong>Blender </strong>(All 3D Modelling)</li>
+<li><strong>Adobe Illustrator</strong> (Map layout)</li>
+<li><strong>Unity </strong>(Probuilder for whitebox)</li>
+<li><strong>Microsoft Loop </strong>(Kanban board)</li>
+</ul>
+<h3>My Roles</h3>
+<ul>
+<li>Level Designer</li>
+<li>Environment Artist</li>
+</ul>
+<h3>Contribution Breakdown</h3>
+<h4>Tutorial &amp; Hub Level</h4>
+<p>My first task was to create a hub world that acted as a tutorial. I submited my first draft quickly to get feedback as soon as possible.</p>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="3">
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/13/gallery/TutorialLevel_Revision0_crop.png" data-size="1094x1080"><img loading="lazy" src="https://skullbuns.com/media/posts/13/gallery/TutorialLevel_Revision0_crop-thumbnail.png" alt="" width="768" height="758"></a>
+<figcaption>My original 2D plan for the level design</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/13/gallery/Sophie_W_Level_Feedback_01.png" data-size="862x1080"><img loading="lazy" src="https://skullbuns.com/media/posts/13/gallery/Sophie_W_Level_Feedback_01-thumbnail.png" alt="" width="768" height="962"></a>
+<figcaption>A piece of feedback explaining the areas the producer wanted tweaked from the original design.</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/13/gallery/TutorialMap_Revision2.png" data-size="1439x1279"><img loading="lazy" src="https://skullbuns.com/media/posts/13/gallery/TutorialMap_Revision2-thumbnail.png" alt="" width="768" height="683"></a>
+<figcaption>My final 2D plan for the level design</figcaption>
+</figure>
+</div></div>
+<h4>Environmental Props</h4>
+<p>Afterwards I was given the task of making 3 environment assets - Bush, grass and shrubbery - with a shared UV map and material set.</p>
+<ul>
+<li>Make a high poly version of a fern-like leaf, clover-like leaf and grass</li>
+<li>Bake them onto a plane and create an appealing, cartoony set of maps in Substance Painter</li>
+<li>Use the planes to create highly optimised models.</li>
+</ul>
+<div class="gallery-wrapper gallery-wrapper--full"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="2">
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/13/gallery/Screenshot-2026-05-13-063205.png" data-size="1167x453"><img loading="lazy" src="https://skullbuns.com/media/posts/13/gallery/Screenshot-2026-05-13-063205-thumbnail.png" alt="" width="768" height="298"></a>
+<figcaption>Paint layers used to add some toony lighting to the leaves as well as a seperate stem colour manually.</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/13/gallery/Screenshot-2026-05-13-063312.png" data-size="1418x512"><img loading="lazy" src="https://skullbuns.com/media/posts/13/gallery/Screenshot-2026-05-13-063312-thumbnail.png" alt="" width="768" height="277"></a>
+<figcaption>The bush is made of 3 modifiers - a radial array for the width, a linear array for the height and finally some vertex based noise.</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/13/gallery/Screenshot-2026-05-13-064034.png" data-size="702x502"><img loading="lazy" src="https://skullbuns.com/media/posts/13/gallery/Screenshot-2026-05-13-064034-thumbnail.png" alt="" width="702" height="502"></a>
+<figcaption>Each bush part is only a couple of faces.</figcaption>
+</figure>
+</div></div>
+<h2>Reflection</h2>
+<p>[To be written].</p>
+<p> </p>
+<p> </p>
+<p> </p>
             ]]>
         </content>
     </entry>
