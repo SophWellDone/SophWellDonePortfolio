@@ -3,62 +3,12 @@
     <title>Sophie Wheldon Portfolio</title>
     <link href="https://skullbuns.com/feed.xml" rel="self" />
     <link href="https://skullbuns.com" />
-    <updated>2026-05-13T09:17:52+01:00</updated>
+    <updated>2026-09-27T20:25:29+01:00</updated>
     <author>
         <name>Sophie Wheldon</name>
     </author>
     <id>https://skullbuns.com</id>
 
-    <entry>
-        <title>UNSCALED - A 3D INDIE GAME</title>
-        <author>
-            <name>Sophie Wheldon</name>
-        </author>
-        <link href="https://skullbuns.com/unscaled-devblog.html"/>
-        <id>https://skullbuns.com/unscaled-devblog.html</id>
-        <media:content url="https://skullbuns.com/media/posts/17/UNSCALED-2-Mesaryth-Kit-0-8-screenshot.png" medium="image" />
-            <category term="Work In Progress"/>
-            <category term="Godot"/>
-            <category term="Blog"/>
-
-        <updated>2026-03-29T16:59:50+01:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://skullbuns.com/media/posts/17/UNSCALED-2-Mesaryth-Kit-0-8-screenshot.png" alt="" />
-                    UNSCALED is my biggest passion project - a full indie game that I plan to release whenever I feel it's&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://skullbuns.com/media/posts/17/UNSCALED-2-Mesaryth-Kit-0-8-screenshot.png" class="type:primaryImage" alt="" /></p>
-                <p><strong>UNSCALED </strong>is my biggest passion project - a full indie game that I plan to release whenever I feel it's ready! Its a singleplayer, 3D hero-based movement shooter that has used and taught me so many game development related skills. </p>
-<figure class="post__image"><img loading="lazy"  src="https://skullbuns.com/media/posts/17/thumbnail.png" alt="" width="1155" height="645" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://skullbuns.com/media/posts/17/responsive/thumbnail-xs.png 384w ,https://skullbuns.com/media/posts/17/responsive/thumbnail-sm.png 600w ,https://skullbuns.com/media/posts/17/responsive/thumbnail-md.png 768w ,https://skullbuns.com/media/posts/17/responsive/thumbnail-lg.png 1200w ,https://skullbuns.com/media/posts/17/responsive/thumbnail-xl.png 1600w"></figure>
-<p>As it is such a large project, I post 2 different types of content to showcase my work - devlog entries and deep dives. Devlog entries are videos showcasing progress and other less serious moments with the community for the game, whilst Deep Dives focus on my implementation of specific features / skills such as code, art, shaders or design philosophies!</p>
-<h2>Devlog Entries</h2>
-<h3>Most Recent</h3>
-<div class="post__iframe"><iframe loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/P5vhSqPZ6Rk?si=PRoI9U1X3yaHd-UY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="allowfullscreen"></iframe></div>
-<p> </p>
-<h3>Playlist</h3>
-<p><a href="https://www.youtube.com/playlist?list=PLmoOwjqW4kiEv187iQuOq-nl3vqGoEKvE">Watch all of the devlog entries on YouTube!</a></p>
-<p> </p>
-<h2>Deep Dives</h2>
-<ul>
-<li><a href="#non-existing-post-with-id-16"></a><a href="#non-existing-post-with-id-16">UNSCALED 1 - INTRO</a>
-<ul>
-<li>Introduction to the project!</li>
-<li>Ability System breakdown</li>
-</ul>
-</li>
-<li><a href="https://skullbuns.com/unscaled-2-mesaryth.html">UNSCALED 2 - MESARYTH</a> <br>
-<ul>
-<li>Character kit design + rules</li>
-<li>Some 3D + UI shaders!</li>
-</ul>
-</li>
-</ul>
-            ]]>
-        </content>
-    </entry>
     <entry>
         <title>Ella-stick - Levels &amp; 3D Assets for Nintendo Switch</title>
         <author>
@@ -67,7 +17,6 @@
         <link href="https://skullbuns.com/project-template-5.html"/>
         <id>https://skullbuns.com/project-template-5.html</id>
         <media:content url="https://skullbuns.com/media/posts/13/TutorialMap_Revision2.png" medium="image" />
-            <category term="Work In Progress"/>
             <category term="Unity"/>
             <category term="Level Design"/>
             <category term="2026"/>
@@ -85,6 +34,8 @@
                 <p></p>
 <h2></h2>
 <h2>Overview/Goal</h2>
+<figure class="post__image"><img loading="lazy"  src="https://skullbuns.com/media/posts/13/hub_revision_1.png" alt="" width="1157" height="502" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://skullbuns.com/media/posts/13/responsive/hub_revision_1-xs.png 384w ,https://skullbuns.com/media/posts/13/responsive/hub_revision_1-sm.png 600w ,https://skullbuns.com/media/posts/13/responsive/hub_revision_1-md.png 768w ,https://skullbuns.com/media/posts/13/responsive/hub_revision_1-lg.png 1200w ,https://skullbuns.com/media/posts/13/responsive/hub_revision_1-xl.png 1600w"></figure>
+<h2></h2>
 <p>I worked as a contractor on Ella-Stick, a game that is developed with the Nintento Switch DevKit for release for the Switch console on the Nintendo Store. I was contracted as a level designer for 42 hours. In that time, I worked with a Producer, Project Advisor and the rest of the team to work through assigned tasks.</p>
 <h2>Media/Gallery</h2>
 <div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="3">
@@ -123,6 +74,15 @@
 <figcaption>My final 2D plan for the level design</figcaption>
 </figure>
 </div></div>
+<p>After 2 rounds of revision and feedback, production was happy for me to work on whiteboxing in-engine.</p>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="3">
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/13/gallery/Screenshot-2026-03-13-003557.png" data-size="1157x492"><img loading="lazy" src="https://skullbuns.com/media/posts/13/gallery/Screenshot-2026-03-13-003557-thumbnail.png" alt="" width="768" height="327"></a>
+<figcaption>This birds-eye view shows how I used the 2D map directly in-engine</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://skullbuns.com/media/posts/13/gallery/Screenshot-2026-03-13-004139.png" data-size="546x488"><img loading="lazy" src="https://skullbuns.com/media/posts/13/gallery/Screenshot-2026-03-13-004139-thumbnail.png" alt="" width="546" height="488"></a>
+<figcaption>A top-down view of the island during the whitebox process.</figcaption>
+</figure>
+</div></div>
 <h4>Environmental Props</h4>
 <p>Afterwards I was given the task of making 3 environment assets - Bush, grass and shrubbery - with a shared UV map and material set.</p>
 <ul>
@@ -142,7 +102,8 @@
 </figure>
 </div></div>
 <h2>Reflection</h2>
-<p>[To be written].</p>
+<p>Being able to create a level design with detailed producer feedback was invaluable, especially for developing my softer skills when it comes to working in a team environment. I feel more confident in my ability to take constructive feedback well and iterate on it too.</p>
+<p>The environmental art portion was something I struggled a lot more with, but it still feels beneficial to know what areas I am less comfortable in when it comes to 3D modelling (Foiliage).</p>
 <p> </p>
 <p> </p>
 <p> </p>
